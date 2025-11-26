@@ -1,0 +1,1028 @@
+[
+  {
+    "email": "sarah.johnson@example.com",
+    "first_name": "Sarah",
+    "last_name": "Johnson",
+    "phone": "+1-226-734-3559",
+    "addresses": [
+      {
+        "street": "2079 Finch Avenue",
+        "city": "Vaughan",
+        "province": "NB",
+        "postal_code": "O4I 9T9",
+        "country": "Canada",
+        "is_default": true
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": true,
+      "email_notifications": false,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Books",
+        "Home & Kitchen",
+        "Electronics",
+        "Food & Grocery"
+      ]
+    },
+    "loyalty_points": 785,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 25,
+    "total_spent": 7813.58,
+    "created_at": {
+      "$date": "2025-01-12T01:38:14.136962Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-22T01:38:14.136993Z"
+    },
+    "last_order_date": {
+      "$date": "2025-11-04T01:38:14.136989Z"
+    }
+  },
+  {
+    "email": "michael.smith1@example.com",
+    "first_name": "Michael",
+    "last_name": "Smith",
+    "phone": "+1-613-468-1008",
+    "addresses": [
+      {
+        "street": "1198 Harbord Street, Unit 1996",
+        "city": "Burlington",
+        "province": "SK",
+        "postal_code": "J6H 7Z9",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "5196 Adelaide Street",
+        "city": "Markham",
+        "province": "AB",
+        "postal_code": "Z9O 9Z9",
+        "country": "Canada",
+        "is_default": false
+      },
+      {
+        "street": "6348 Wellington Street, Unit 178",
+        "city": "Richmond Hill",
+        "province": "BC",
+        "postal_code": "Q9K 0E5",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": false,
+      "sms_notifications": true,
+      "email_notifications": true,
+      "language": "en",
+      "currency": "USD",
+      "favorite_categories": [
+        "Clothing"
+      ]
+    },
+    "loyalty_points": 1580,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 32,
+    "total_spent": 15262.11,
+    "created_at": {
+      "$date": "2025-01-28T01:38:14.137040Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-12T01:38:14.137066Z"
+    },
+    "last_order_date": {
+      "$date": "2025-09-27T01:38:14.137063Z"
+    }
+  },
+  {
+    "email": "jessica.williams2@example.com",
+    "first_name": "Jessica",
+    "last_name": "Williams",
+    "phone": "+1-365-718-3553",
+    "addresses": [
+      {
+        "street": "6899 Lawrence Avenue, Unit 388",
+        "city": "Mississauga",
+        "province": "QC",
+        "postal_code": "Q3H 5P0",
+        "country": "Canada",
+        "is_default": true
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": false,
+      "email_notifications": false,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Electronics",
+        "Books",
+        "Beauty & Personal Care",
+        "Sports & Outdoors"
+      ]
+    },
+    "loyalty_points": 280,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 15,
+    "total_spent": 2259.27,
+    "created_at": {
+      "$date": "2023-05-10T01:38:14.137082Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-22T01:38:14.137096Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-28T01:38:14.137093Z"
+    }
+  },
+  {
+    "email": "david.brown3@example.com",
+    "first_name": "David",
+    "last_name": "Brown",
+    "phone": "+1-613-421-8694",
+    "addresses": [
+      {
+        "street": "1544 Eglinton Avenue",
+        "city": "Richmond Hill",
+        "province": "QC",
+        "postal_code": "T6I 9J8",
+        "country": "Canada",
+        "is_default": true
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": false,
+      "email_notifications": true,
+      "language": "en",
+      "currency": "USD",
+      "favorite_categories": [
+        "Home & Kitchen"
+      ]
+    },
+    "loyalty_points": 690,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 37,
+    "total_spent": 6488.39,
+    "created_at": {
+      "$date": "2025-04-10T01:38:14.137111Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-20T01:38:14.137124Z"
+    },
+    "last_order_date": {
+      "$date": "2025-11-08T01:38:14.137121Z"
+    }
+  },
+  {
+    "email": "emily.jones4@example.com",
+    "first_name": "Emily",
+    "last_name": "Jones",
+    "phone": "+1-343-928-6335",
+    "addresses": [
+      {
+        "street": "2629 Richmond Street, Unit 1263",
+        "city": "Markham",
+        "province": "MB",
+        "postal_code": "D5R 3S6",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "7642 Richmond Street",
+        "city": "Markham",
+        "province": "NB",
+        "postal_code": "G7N 0E9",
+        "country": "Canada",
+        "is_default": false
+      },
+      {
+        "street": "3896 College Street, Unit 1473",
+        "city": "Burlington",
+        "province": "AB",
+        "postal_code": "R0L 4M1",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": true,
+      "email_notifications": false,
+      "language": "en",
+      "currency": "USD",
+      "favorite_categories": [
+        "Beauty & Personal Care",
+        "Sports & Outdoors",
+        "Books"
+      ]
+    },
+    "loyalty_points": 1120,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 24,
+    "total_spent": 11487.1,
+    "created_at": {
+      "$date": "2022-12-27T01:38:14.137138Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-24T01:38:14.137162Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-25T01:38:14.137159Z"
+    }
+  },
+  {
+    "email": "james.garcia5@example.com",
+    "first_name": "James",
+    "last_name": "Garcia",
+    "phone": "+1-416-910-7357",
+    "addresses": [
+      {
+        "street": "3422 Harbord Street",
+        "city": "Vaughan",
+        "province": "BC",
+        "postal_code": "H2O 2W4",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "8544 Bay Street",
+        "city": "Toronto",
+        "province": "SK",
+        "postal_code": "J4J 3F3",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": false,
+      "email_notifications": true,
+      "language": "fr",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Toys & Games",
+        "Books",
+        "Electronics"
+      ]
+    },
+    "loyalty_points": 68,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 0,
+    "total_spent": 0.0,
+    "created_at": {
+      "$date": "2022-12-10T01:38:14.137177Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-18T01:38:14.137192Z"
+    }
+  },
+  {
+    "email": "ashley.miller6@example.com",
+    "first_name": "Ashley",
+    "last_name": "Miller",
+    "phone": "+1-365-705-9433",
+    "addresses": [
+      {
+        "street": "7369 Eglinton Avenue, Unit 566",
+        "city": "Oakville",
+        "province": "NS",
+        "postal_code": "U7V 1E3",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "4537 Queen Street West, Unit 2267",
+        "city": "Mississauga",
+        "province": "SK",
+        "postal_code": "U6O 4B7",
+        "country": "Canada",
+        "is_default": false
+      },
+      {
+        "street": "7947 Harbord Street, Unit 2406",
+        "city": "Vaughan",
+        "province": "ON",
+        "postal_code": "G6I 1I4",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": true,
+      "email_notifications": false,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Electronics",
+        "Books",
+        "Sports & Outdoors"
+      ]
+    },
+    "loyalty_points": 588,
+    "account_status": "inactive",
+    "email_verified": false,
+    "phone_verified": false,
+    "total_orders": 30,
+    "total_spent": 5450.96,
+    "created_at": {
+      "$date": "2024-03-22T01:38:14.137209Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-20T01:38:14.137234Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-02T01:38:14.137231Z"
+    }
+  },
+  {
+    "email": "christopher.davis7@example.com",
+    "first_name": "Christopher",
+    "last_name": "Davis",
+    "phone": "+1-289-531-2548",
+    "addresses": [
+      {
+        "street": "928 Finch Avenue, Unit 738",
+        "city": "Mississauga",
+        "province": "NB",
+        "postal_code": "L0Q 4W1",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "7589 Queen Street West",
+        "city": "Markham",
+        "province": "BC",
+        "postal_code": "S9D 2U9",
+        "country": "Canada",
+        "is_default": false
+      },
+      {
+        "street": "8845 Yonge Street, Unit 139",
+        "city": "Toronto",
+        "province": "ON",
+        "postal_code": "B7J 5I3",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": false,
+      "sms_notifications": true,
+      "email_notifications": true,
+      "language": "fr",
+      "currency": "USD",
+      "favorite_categories": [
+        "Electronics"
+      ]
+    },
+    "loyalty_points": 533,
+    "account_status": "inactive",
+    "email_verified": false,
+    "phone_verified": false,
+    "total_orders": 25,
+    "total_spent": 5545.57,
+    "created_at": {
+      "$date": "2023-12-27T01:38:14.137249Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-03T01:38:14.137273Z"
+    },
+    "last_order_date": {
+      "$date": "2025-08-30T01:38:14.137271Z"
+    }
+  },
+  {
+    "email": "amanda.rodriguez8@example.com",
+    "first_name": "Amanda",
+    "last_name": "Rodriguez",
+    "phone": "+1-613-947-7881",
+    "addresses": [
+      {
+        "street": "2321 Front Street",
+        "city": "Toronto",
+        "province": "NB",
+        "postal_code": "T4U 0E8",
+        "country": "Canada",
+        "is_default": true
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": true,
+      "email_notifications": true,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Clothing",
+        "Food & Grocery",
+        "Sports & Outdoors",
+        "Toys & Games"
+      ]
+    },
+    "loyalty_points": 125,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 1,
+    "total_spent": 448.31,
+    "created_at": {
+      "$date": "2024-10-06T01:38:14.137287Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-06T01:38:14.137299Z"
+    },
+    "last_order_date": {
+      "$date": "2025-09-23T01:38:14.137297Z"
+    }
+  },
+  {
+    "email": "daniel.martinez9@example.com",
+    "first_name": "Daniel",
+    "last_name": "Martinez",
+    "phone": "+1-289-850-1389",
+    "addresses": [
+      {
+        "street": "8174 Finch Avenue, Unit 1500",
+        "city": "Richmond Hill",
+        "province": "MB",
+        "postal_code": "K7Y 8M4",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "306 Adelaide Street",
+        "city": "Oakville",
+        "province": "SK",
+        "postal_code": "E9P 8X8",
+        "country": "Canada",
+        "is_default": false
+      },
+      {
+        "street": "4734 Bay Street, Unit 1941",
+        "city": "Burlington",
+        "province": "NB",
+        "postal_code": "U3W 1T4",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": false,
+      "sms_notifications": true,
+      "email_notifications": true,
+      "language": "en",
+      "currency": "USD",
+      "favorite_categories": [
+        "Clothing"
+      ]
+    },
+    "loyalty_points": 1285,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 48,
+    "total_spent": 12189.14,
+    "created_at": {
+      "$date": "2025-03-14T01:38:14.137314Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-21T01:38:14.137337Z"
+    },
+    "last_order_date": {
+      "$date": "2025-09-14T01:38:14.137334Z"
+    }
+  },
+  {
+    "email": "jennifer.hernandez10@example.com",
+    "first_name": "Jennifer",
+    "last_name": "Hernandez",
+    "phone": "+1-613-665-2038",
+    "addresses": [
+      {
+        "street": "5445 St. Clair Avenue",
+        "city": "Markham",
+        "province": "ON",
+        "postal_code": "K6Z 4I7",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "4505 Wellington Street",
+        "city": "Richmond Hill",
+        "province": "BC",
+        "postal_code": "N9M 8R1",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": true,
+      "email_notifications": true,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Home & Kitchen",
+        "Food & Grocery",
+        "Beauty & Personal Care",
+        "Sports & Outdoors"
+      ]
+    },
+    "loyalty_points": 268,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 8,
+    "total_spent": 2341.79,
+    "created_at": {
+      "$date": "2023-10-11T01:38:14.137351Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-05T01:38:14.137367Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-05T01:38:14.137365Z"
+    }
+  },
+  {
+    "email": "matthew.lopez11@example.com",
+    "first_name": "Matthew",
+    "last_name": "Lopez",
+    "phone": "+1-613-658-4645",
+    "addresses": [
+      {
+        "street": "5644 Bloor Street West",
+        "city": "Richmond Hill",
+        "province": "MB",
+        "postal_code": "G8C 3M0",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "3258 St. Clair Avenue, Unit 2122",
+        "city": "Burlington",
+        "province": "ON",
+        "postal_code": "U6V 3U9",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": true,
+      "email_notifications": true,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Electronics",
+        "Home & Kitchen",
+        "Books"
+      ]
+    },
+    "loyalty_points": 292,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 13,
+    "total_spent": 3216.34,
+    "created_at": {
+      "$date": "2024-10-30T01:38:14.137382Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-24T01:38:14.137399Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-22T01:38:14.137397Z"
+    }
+  },
+  {
+    "email": "lisa.wilson12@example.com",
+    "first_name": "Lisa",
+    "last_name": "Wilson",
+    "phone": "+1-613-540-9653",
+    "addresses": [
+      {
+        "street": "3936 Steeles Avenue, Unit 1231",
+        "city": "Mississauga",
+        "province": "NS",
+        "postal_code": "Y5E 8U3",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "9669 Finch Avenue",
+        "city": "Richmond Hill",
+        "province": "ON",
+        "postal_code": "Q0X 6D5",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": false,
+      "sms_notifications": false,
+      "email_notifications": true,
+      "language": "fr",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Clothing"
+      ]
+    },
+    "loyalty_points": 1393,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 33,
+    "total_spent": 13720.87,
+    "created_at": {
+      "$date": "2022-11-27T01:38:14.137414Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-08T01:38:14.137432Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-02T01:38:14.137429Z"
+    }
+  },
+  {
+    "email": "joshua.anderson13@example.com",
+    "first_name": "Joshua",
+    "last_name": "Anderson",
+    "phone": "+1-289-626-4284",
+    "addresses": [
+      {
+        "street": "1371 Lawrence Avenue",
+        "city": "Richmond Hill",
+        "province": "ON",
+        "postal_code": "Z4P 7C3",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "2912 Front Street",
+        "city": "Mississauga",
+        "province": "AB",
+        "postal_code": "V7O 0K5",
+        "country": "Canada",
+        "is_default": false
+      },
+      {
+        "street": "7630 King Street East",
+        "city": "Vaughan",
+        "province": "ON",
+        "postal_code": "X2I 0W1",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": false,
+      "sms_notifications": true,
+      "email_notifications": true,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Home & Kitchen",
+        "Electronics"
+      ]
+    },
+    "loyalty_points": 1440,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": false,
+    "total_orders": 29,
+    "total_spent": 14488.48,
+    "created_at": {
+      "$date": "2025-08-18T01:38:14.137445Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-02T01:38:14.137469Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-05T01:38:14.137466Z"
+    }
+  },
+  {
+    "email": "michelle.thomas14@example.com",
+    "first_name": "Michelle",
+    "last_name": "Thomas",
+    "phone": "+1-905-609-2918",
+    "addresses": [
+      {
+        "street": "8363 Wellington Street",
+        "city": "Brampton",
+        "province": "SK",
+        "postal_code": "V3T 6T2",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "4028 Bloor Street West",
+        "city": "Brampton",
+        "province": "QC",
+        "postal_code": "M9U 9W7",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": true,
+      "email_notifications": true,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Toys & Games",
+        "Beauty & Personal Care",
+        "Books",
+        "Electronics"
+      ]
+    },
+    "loyalty_points": 366,
+    "account_status": "inactive",
+    "email_verified": false,
+    "phone_verified": false,
+    "total_orders": 12,
+    "total_spent": 3366.61,
+    "created_at": {
+      "$date": "2023-07-16T01:38:14.137483Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-14T01:38:14.137501Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-30T01:38:14.137498Z"
+    }
+  },
+  {
+    "email": "andrew.taylor15@example.com",
+    "first_name": "Andrew",
+    "last_name": "Taylor",
+    "phone": "+1-226-878-6102",
+    "addresses": [
+      {
+        "street": "3839 Sheppard Avenue",
+        "city": "Oakville",
+        "province": "MB",
+        "postal_code": "W3D 4R5",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "6634 Bay Street, Unit 1493",
+        "city": "Burlington",
+        "province": "NB",
+        "postal_code": "V9Q 8P0",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": false,
+      "email_notifications": false,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Sports & Outdoors",
+        "Books"
+      ]
+    },
+    "loyalty_points": 63,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": false,
+    "total_orders": 2,
+    "total_spent": 336.06,
+    "created_at": {
+      "$date": "2024-10-16T01:38:14.137515Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-20T01:38:14.137533Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-12T01:38:14.137530Z"
+    }
+  },
+  {
+    "email": "elizabeth.moore16@example.com",
+    "first_name": "Elizabeth",
+    "last_name": "Moore",
+    "phone": "+1-647-455-3749",
+    "addresses": [
+      {
+        "street": "6655 Adelaide Street",
+        "city": "Toronto",
+        "province": "QC",
+        "postal_code": "I9H 7S2",
+        "country": "Canada",
+        "is_default": true
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "sms_notifications": false,
+      "email_notifications": false,
+      "language": "en",
+      "currency": "USD",
+      "favorite_categories": [
+        "Toys & Games",
+        "Food & Grocery",
+        "Sports & Outdoors",
+        "Electronics"
+      ]
+    },
+    "loyalty_points": 1165,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 36,
+    "total_spent": 11534.64,
+    "created_at": {
+      "$date": "2024-04-27T01:38:14.137546Z"
+    },
+    "updated_at": {
+      "$date": "2025-10-28T01:38:14.137558Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-22T01:38:14.137555Z"
+    }
+  },
+  {
+    "email": "william.jackson17@example.com",
+    "first_name": "William",
+    "last_name": "Jackson",
+    "phone": "+1-289-388-9824",
+    "addresses": [
+      {
+        "street": "65 Spadina Avenue, Unit 269",
+        "city": "Richmond Hill",
+        "province": "ON",
+        "postal_code": "G2W 5T1",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "7650 Yonge Street",
+        "city": "Toronto",
+        "province": "MB",
+        "postal_code": "F7Y 8J8",
+        "country": "Canada",
+        "is_default": false
+      },
+      {
+        "street": "8673 Adelaide Street",
+        "city": "Burlington",
+        "province": "AB",
+        "postal_code": "W2U 2B9",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": false,
+      "sms_notifications": true,
+      "email_notifications": false,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Home & Kitchen"
+      ]
+    },
+    "loyalty_points": 631,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 23,
+    "total_spent": 5608.29,
+    "created_at": {
+      "$date": "2023-01-05T01:38:14.137572Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-22T01:38:14.137596Z"
+    },
+    "last_order_date": {
+      "$date": "2025-10-06T01:38:14.137593Z"
+    }
+  },
+  {
+    "email": "stephanie.martin18@example.com",
+    "first_name": "Stephanie",
+    "last_name": "Martin",
+    "phone": "+1-905-934-3380",
+    "addresses": [
+      {
+        "street": "740 Dundas Street",
+        "city": "Toronto",
+        "province": "NB",
+        "postal_code": "Q1E 5V4",
+        "country": "Canada",
+        "is_default": true
+      }
+    ],
+    "preferences": {
+      "newsletter": false,
+      "sms_notifications": false,
+      "email_notifications": true,
+      "language": "fr",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Books",
+        "Toys & Games",
+        "Clothing"
+      ]
+    },
+    "loyalty_points": 1063,
+    "account_status": "inactive",
+    "email_verified": false,
+    "phone_verified": false,
+    "total_orders": 36,
+    "total_spent": 10752.26,
+    "created_at": {
+      "$date": "2025-05-08T01:38:14.137610Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-06T01:38:14.137621Z"
+    },
+    "last_order_date": {
+      "$date": "2025-09-01T01:38:14.137619Z"
+    }
+  },
+  {
+    "email": "robert.lee19@example.com",
+    "first_name": "Robert",
+    "last_name": "Lee",
+    "phone": "+1-365-294-2304",
+    "addresses": [
+      {
+        "street": "2461 Lawrence Avenue, Unit 1903",
+        "city": "Toronto",
+        "province": "NB",
+        "postal_code": "H9M 8G1",
+        "country": "Canada",
+        "is_default": true
+      },
+      {
+        "street": "5357 Queen Street West",
+        "city": "Brampton",
+        "province": "AB",
+        "postal_code": "O6P 9T7",
+        "country": "Canada",
+        "is_default": false
+      },
+      {
+        "street": "1745 Queen Street West",
+        "city": "Burlington",
+        "province": "NS",
+        "postal_code": "I7I 6F6",
+        "country": "Canada",
+        "is_default": false
+      }
+    ],
+    "preferences": {
+      "newsletter": false,
+      "sms_notifications": false,
+      "email_notifications": false,
+      "language": "en",
+      "currency": "CAD",
+      "favorite_categories": [
+        "Food & Grocery",
+        "Clothing",
+        "Home & Kitchen",
+        "Beauty & Personal Care"
+      ]
+    },
+    "loyalty_points": 2445,
+    "account_status": "active",
+    "email_verified": true,
+    "phone_verified": true,
+    "total_orders": 50,
+    "total_spent": 24914.03,
+    "created_at": {
+      "$date": "2023-07-16T01:38:14.137634Z"
+    },
+    "updated_at": {
+      "$date": "2025-10-29T01:38:14.137657Z"
+    },
+    "last_order_date": {
+      "$date": "2025-09-03T01:38:14.137654Z"
+    }
+  }
+]

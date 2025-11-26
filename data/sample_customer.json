@@ -1,0 +1,54 @@
+{
+  "_id": {
+    "$oid": "674685a1b2c3d4e5f6789abc"
+  },
+  "email": "sarah.johnson@example.com",
+  "first_name": "Sarah",
+  "last_name": "Johnson",
+  "phone": "+1-416-555-0123",
+  "addresses": [
+    {
+      "street": "123 Queen Street West",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5H 2M5",
+      "country": "Canada",
+      "is_default": true
+    },
+    {
+      "street": "456 Bay Street, Unit 2103",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5G 2C2",
+      "country": "Canada",
+      "is_default": false
+    }
+  ],
+  "preferences": {
+    "newsletter": true,
+    "sms_notifications": true,
+    "email_notifications": true,
+    "language": "en",
+    "currency": "CAD",
+    "favorite_categories": [
+      "Electronics",
+      "Books",
+      "Home & Kitchen"
+    ]
+  },
+  "loyalty_points": 2750,
+  "account_status": "active",
+  "email_verified": true,
+  "phone_verified": true,
+  "total_orders": 18,
+  "total_spent": 5247.89,
+  "last_order_date": {
+    "$date": "2024-11-20T10:15:30.000Z"
+  },
+  "created_at": {
+    "$date": "2023-05-15T14:22:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2024-11-20T10:15:30.000Z"
+  }
+}
