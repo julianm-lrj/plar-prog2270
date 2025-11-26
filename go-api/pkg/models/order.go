@@ -23,6 +23,7 @@ type Address struct {
 	Province   string `json:"province" bson:"province" validate:"required,len=2"` // ON, BC, etc.
 	PostalCode string `json:"postal_code" bson:"postal_code" validate:"required"`
 	Country    string `json:"country" bson:"country" validate:"required"`
+	IsDefault  bool   `json:"is_default" bson:"is_default"`
 }
 
 // OrderTotals represents the financial breakdown of an order

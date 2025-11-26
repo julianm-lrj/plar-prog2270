@@ -46,6 +46,7 @@ func InitializeRoutes() {
 			customers.GET("/:id", nil)
 			customers.PUT("/:id", nil)
 			customers.DELETE("/:id", nil)
+			customers.GET("/:id/orders", GetCustomerOrders)
 		}
 
 		reviews := api.Group("/reviews")
