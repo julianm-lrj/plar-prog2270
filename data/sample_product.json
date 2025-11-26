@@ -1,0 +1,51 @@
+{
+  "_id": { "$oid": "674685a1b2c3d4e5f6789012" },
+  "sku": "ELEC-LAPTOP-001",
+  "name": "High-Performance Laptop",
+  "description": "Professional-grade laptop with 15-inch display, Intel i7 processor, 16GB RAM, and 512GB SSD. Perfect for work, development, and content creation.",
+  "category": "Electronics",
+  "subcategory": "Computers",
+  "brand": "TechBrand",
+  "price": 1299.99,
+  "currency": "CAD",
+  "stock": {
+    "warehouse_main": 50,
+    "warehouse_east": 25,
+    "warehouse_west": 30,
+    "total": 105
+  },
+  "attributes": {
+    "screen_size": "15.6 inches",
+    "processor": "Intel Core i7-12700H",
+    "ram": "16GB DDR4",
+    "storage": "512GB NVMe SSD",
+    "graphics": "Intel Iris Xe Graphics",
+    "weight": "1.8 kg",
+    "battery_life": "Up to 10 hours",
+    "operating_system": "Windows 11 Pro",
+    "ports": "2x USB-C, 2x USB-A, HDMI, 3.5mm audio",
+    "warranty": "2 years manufacturer warranty"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80",
+    "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=80",
+    "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=800&q=80",
+    "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800&q=80"
+  ],
+  "ratings": {
+    "average": 4.5,
+    "count": 230
+  },
+  "tags": [
+    "laptop",
+    "electronics",
+    "computing",
+    "work",
+    "professional",
+    "intel",
+    "windows"
+  ],
+  "status": "active",
+  "created_at": { "$date": "2025-01-15T10:00:00.000Z" },
+  "updated_at": { "$date": "2025-11-20T14:30:00.000Z" }
+}
