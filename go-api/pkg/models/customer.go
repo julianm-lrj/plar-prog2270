@@ -10,6 +10,7 @@ import (
 type Customer struct {
 	ID            bson.ObjectID `bson:"_id,omitempty" json:"id"`
 	Email         string        `bson:"email" json:"email" validate:"required,email"`
+	Password      string        `bson:"password" json:"-" validate:"required,min=6"` // Never expose in JSON
 	FirstName     string        `bson:"first_name" json:"first_name" validate:"required,min=2,max=50"`
 	LastName      string        `bson:"last_name" json:"last_name" validate:"required,min=2,max=50"`
 	Phone         string        `bson:"phone" json:"phone" validate:"required,min=10,max=20"`
@@ -24,6 +25,16 @@ type Customer struct {
 	LastOrderDate time.Time     `bson:"last_order_date,omitempty" json:"last_order_date,omitempty"`
 	CreatedAt     time.Time     `bson:"created_at" json:"created_at"`
 	UpdatedAt     time.Time     `bson:"updated_at" json:"updated_at"`
+}
+
+// CreateCustomerRequest represents the request payload for creating a new customer
+type CreateCustomerRequest struct {
+	Email     string  `json:"email" validate:"required,email"`
+	Password  string  `json:"password" validate:"required,min=8"`
+	FirstName string  `json:"first_name" validate:"required,min=2,max=50"`
+	LastName  string  `json:"last_name" validate:"required,min=2,max=50"`
+	Phone     string  `json:"phone" validate:"required,min=10,max=20"`
+	Address   Address `json:"address" validate:"required"`
 }
 
 // Preferences represents customer preferences and settings

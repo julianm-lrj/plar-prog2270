@@ -1,27 +1,14 @@
 package mongo
 
 import (
+	"context"
+	"errors"
+
 	"go.mongodb.org/mongo-driver/v2/bson"
 	"go.mongodb.org/mongo-driver/v2/mongo/options"
 	"julianmorley.ca/con-plar/prog2270/pkg/global"
+	"julianmorley.ca/con-plar/prog2270/pkg/models"
 )
-
-// var databaseName = global.GetEnvOrDefault("MONGODB_DATABASE", "ecommerce")
-// var productsConn = Client.Database(databaseName).Collection("products")
-// var ordersConn = Client.Database(databaseName).Collection("orders")
-// var customersConn = Client.Database(databaseName).Collection("customers")
-// var reviewsConn = Client.Database(databaseName).Collection("reviews")
-// var cartItemsConn = Client.Database(databaseName).Collection("cart_items")
-// var inventoryConn = Client.Database(databaseName).Collection("inventory")
-
-// func EnsureIndexesOnStartup() {
-// 	ctx, cancel := global.GetDefaultTimer()
-// 	defer cancel()
-
-// 	if err := EnsureIndexes(ctx, db); err != nil {
-// 		log.Fatalf("Failed to ensure indexes: %v", err)
-// 	}
-// }
 
 func GetAllProducts() ([]bson.M, error) {
 	ctx, cancel := global.GetDefaultTimer()
@@ -213,4 +200,28 @@ func GetCustomerOrdersWithStats(customerID bson.ObjectID, page int, limit int) (
 	}
 
 	return result, nil
+}
+
+// CreateCustomer creates a new customer document in the database
+func CreateCustomer(ctx context.Context, customer *models.Customer) (*models.Customer, error) {
+	collection := GetCollection("customers")
+
+	// Check if email already exists
+	var existingCustomer bson.M
+	err := collection.FindOne(ctx, bson.D{{Key: "email", Value: customer.Email}}).Decode(&existingCustomer)
+	if err == nil {
+		// Email already exists
+		return nil, errors.New("email already exists")
+	}
+
+	// Insert the customer
+	result, err := collection.InsertOne(ctx, customer)
+	if err != nil {
+		return nil, err
+	}
+
+	// Set the generated ID
+	customer.ID = result.InsertedID.(bson.ObjectID)
+
+	return customer, nil
 }

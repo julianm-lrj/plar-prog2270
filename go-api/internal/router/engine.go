@@ -42,7 +42,7 @@ func InitializeRoutes() {
 		customers := api.Group("/customers")
 		{
 			customers.GET("/", nil)
-			customers.POST("/", nil)
+			customers.POST("/", CreateCustomer)
 			customers.GET("/:id", nil)
 			customers.PUT("/:id", nil)
 			customers.DELETE("/:id", nil)
