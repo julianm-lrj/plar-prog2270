@@ -1,0 +1,20 @@
+{
+  "_id": {
+    "$oid": "674685a1b2c3d4e5f6789999"
+  },
+  "product_id": {
+    "$oid": "674685a1b2c3d4e5f6789012"
+  },
+  "sku": "LAPTOP-DELL-XPS13-2024",
+  "warehouse": "Toronto Distribution Center",
+  "change_type": "sale",
+  "quantity_before": 105,
+  "quantity_after": 103,
+  "quantity_changed": -2,
+  "reason": "Order #ORD-2024-11-001 fulfilled - 2 units sold to customer",
+  "performed_by": "system",
+  "notes": "Automatic inventory adjustment triggered by order fulfillment process",
+  "created_at": {
+    "$date": "2024-11-26T14:30:00.000Z"
+  }
+}
