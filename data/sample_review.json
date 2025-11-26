@@ -1,0 +1,12 @@
+{
+  "product_id": {"$oid": "674685a1b2c3d4e5f6789012"},
+  "customer_id": {"$oid": "674685a1b2c3d4e5f6789abc"},
+  "order_id": {"$oid": "674685a1b2c3d4e5f6789def"},
+  "rating": 5,
+  "title": "Excellent laptop for work!",
+  "comment": "I've been using this laptop for 3 months now and it's been fantastic. The performance is excellent for development work, battery life is as advertised, and the build quality feels premium. The display is sharp and bright, keyboard is comfortable for long coding sessions. Highly recommended for professionals!",
+  "verified_purchase": true,
+  "helpful_count": 42,
+  "created_at": {"$date": "2025-11-20T09:15:00.000Z"},
+  "updated_at": {"$date": "2025-11-20T09:15:00.000Z"}
+}
