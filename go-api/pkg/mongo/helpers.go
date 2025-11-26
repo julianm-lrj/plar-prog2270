@@ -3,6 +3,7 @@ package mongo
 import (
 	"context"
 	"errors"
+	"strconv"
 	"time"
 
 	"go.mongodb.org/mongo-driver/v2/bson"
@@ -301,6 +302,141 @@ func UpdateCustomer(ctx context.Context, customerID bson.ObjectID, req *models.U
 		if err.Error() == "mongo: no documents in result" {
 			return nil, errors.New("customer not found")
 		}
+		return nil, err
+	}
+
+	return &updatedCustomer, nil
+}
+
+func AddCustomerAddress(ctx context.Context, customerID bson.ObjectID, address models.Address) (*models.Customer, error) {
+	collection := GetCollection("customers")
+
+	if address.IsDefault {
+		unsetUpdate := bson.D{{Key: "$set", Value: bson.D{{Key: "addresses.$[].is_default", Value: false}}}}
+		_, _ = collection.UpdateOne(ctx, bson.D{{Key: "_id", Value: customerID}}, unsetUpdate)
+	}
+
+	update := bson.D{
+		{Key: "$push", Value: bson.D{{Key: "addresses", Value: address}}},
+		{Key: "$set", Value: bson.D{{Key: "updated_at", Value: time.Now()}}},
+	}
+
+	findOptions := options.FindOneAndUpdate().SetReturnDocument(options.After)
+	findOptions.SetProjection(bson.D{{Key: "password", Value: 0}})
+
+	var updatedCustomer models.Customer
+	err := collection.FindOneAndUpdate(
+		ctx,
+		bson.D{{Key: "_id", Value: customerID}},
+		update,
+		findOptions,
+	).Decode(&updatedCustomer)
+
+	if err != nil {
+		if err.Error() == "mongo: no documents in result" {
+			return nil, errors.New("customer not found")
+		}
+		return nil, err
+	}
+
+	return &updatedCustomer, nil
+}
+
+func UpdateCustomerAddress(ctx context.Context, customerID bson.ObjectID, addressIndex int, address models.Address) (*models.Customer, error) {
+	collection := GetCollection("customers")
+
+	var customer models.Customer
+	err := collection.FindOne(ctx, bson.D{{Key: "_id", Value: customerID}}).Decode(&customer)
+	if err != nil {
+		if err.Error() == "mongo: no documents in result" {
+			return nil, errors.New("customer not found")
+		}
+		return nil, err
+	}
+
+	if addressIndex < 0 || addressIndex >= len(customer.Addresses) {
+		return nil, errors.New("address not found")
+	}
+
+	// If setting as default, unset all other defaults first
+	if address.IsDefault {
+		unsetUpdate := bson.D{{Key: "$set", Value: bson.D{{Key: "addresses.$[].is_default", Value: false}}}}
+		_, _ = collection.UpdateOne(ctx, bson.D{{Key: "_id", Value: customerID}}, unsetUpdate)
+	}
+
+	// Update the specific address using array index
+	update := bson.D{
+		{Key: "$set", Value: bson.D{
+			{Key: "addresses." + strconv.Itoa(addressIndex), Value: address},
+			{Key: "updated_at", Value: time.Now()},
+		}},
+	}
+
+	findOptions := options.FindOneAndUpdate().SetReturnDocument(options.After)
+	findOptions.SetProjection(bson.D{{Key: "password", Value: 0}})
+
+	var updatedCustomer models.Customer
+	err = collection.FindOneAndUpdate(
+		ctx,
+		bson.D{{Key: "_id", Value: customerID}},
+		update,
+		findOptions,
+	).Decode(&updatedCustomer)
+
+	if err != nil {
+		return nil, err
+	}
+
+	return &updatedCustomer, nil
+}
+
+func DeleteCustomerAddress(ctx context.Context, customerID bson.ObjectID, addressIndex int) (*models.Customer, error) {
+	collection := GetCollection("customers")
+
+	var customer models.Customer
+	err := collection.FindOne(ctx, bson.D{{Key: "_id", Value: customerID}}).Decode(&customer)
+	if err != nil {
+		if err.Error() == "mongo: no documents in result" {
+			return nil, errors.New("customer not found")
+		}
+		return nil, err
+	}
+
+	if addressIndex < 0 || addressIndex >= len(customer.Addresses) {
+		return nil, errors.New("address not found")
+	}
+
+	if len(customer.Addresses) == 1 {
+		return nil, errors.New("cannot delete last address")
+	}
+
+	wasDefault := customer.Addresses[addressIndex].IsDefault
+
+	customer.Addresses = append(customer.Addresses[:addressIndex], customer.Addresses[addressIndex+1:]...)
+
+	if wasDefault && len(customer.Addresses) > 0 {
+		customer.Addresses[0].IsDefault = true
+	}
+
+	update := bson.D{
+		{Key: "$set", Value: bson.D{
+			{Key: "addresses", Value: customer.Addresses},
+			{Key: "updated_at", Value: time.Now()},
+		}},
+	}
+
+	findOptions := options.FindOneAndUpdate().SetReturnDocument(options.After)
+	findOptions.SetProjection(bson.D{{Key: "password", Value: 0}})
+
+	var updatedCustomer models.Customer
+	err = collection.FindOneAndUpdate(
+		ctx,
+		bson.D{{Key: "_id", Value: customerID}},
+		update,
+		findOptions,
+	).Decode(&updatedCustomer)
+
+	if err != nil {
 		return nil, err
 	}
 

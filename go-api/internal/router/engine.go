@@ -47,6 +47,9 @@ func InitializeRoutes() {
 			customers.PUT("/:id", UpdateCustomer)
 			customers.DELETE("/:id", nil)
 			customers.GET("/:id/orders", GetCustomerOrders)
+			customers.POST("/:id/addresses", AddCustomerAddress)
+			customers.PUT("/:id/addresses/:addressId", UpdateCustomerAddress)
+			customers.DELETE("/:id/addresses/:addressId", DeleteCustomerAddress)
 		}
 
 		reviews := api.Group("/reviews")
