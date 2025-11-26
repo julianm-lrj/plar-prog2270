@@ -13,7 +13,7 @@ func InitEngine() {
 func InitializeRoutes() {
 	api := Router.Group("/api")
 	{
-		api.GET("/health", nil)
+		api.GET("/health", HealthCheck)
 
 		products := api.Group("/products")
 		{

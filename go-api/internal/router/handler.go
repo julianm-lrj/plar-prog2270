@@ -8,6 +8,15 @@ import (
 	"julianmorley.ca/con-plar/prog2270/pkg/mongo"
 )
 
+func HealthCheck(c *gin.Context) {
+	db := mongo.GetDatabase()
+	if err := db.Client().Ping(c, nil); err != nil {
+		c.JSON(http.StatusInternalServerError, global.ErrorResponse("Database connection failed", nil))
+		return
+	}
+	c.JSON(http.StatusOK, global.SuccessResponse(map[string]string{"status": "OK", "database": "Connected"}))
+}
+
 func GetAllProducts(c *gin.Context) {
 	products, err := mongo.GetAllProducts()
 	if err != nil {
