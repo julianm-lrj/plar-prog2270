@@ -225,3 +225,23 @@ func CreateCustomer(ctx context.Context, customer *models.Customer) (*models.Cus
 
 	return customer, nil
 }
+
+func GetCustomerByID(ctx context.Context, customerID bson.ObjectID) (*models.Customer, error) {
+	collection := GetCollection("customers")
+
+	projection := bson.D{
+		{Key: "password", Value: 0},
+	}
+	findOptions := options.FindOne().SetProjection(projection)
+
+	var customer models.Customer
+	err := collection.FindOne(ctx, bson.D{{Key: "_id", Value: customerID}}, findOptions).Decode(&customer)
+	if err != nil {
+		if err.Error() == "mongo: no documents in result" {
+			return nil, errors.New("customer not found")
+		}
+		return nil, err
+	}
+
+	return &customer, nil
+}

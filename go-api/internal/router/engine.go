@@ -43,7 +43,7 @@ func InitializeRoutes() {
 		{
 			customers.GET("/", nil)
 			customers.POST("/", CreateCustomer)
-			customers.GET("/:id", nil)
+			customers.GET("/:id", GetCustomerByID)
 			customers.PUT("/:id", nil)
 			customers.DELETE("/:id", nil)
 			customers.GET("/:id/orders", GetCustomerOrders)
