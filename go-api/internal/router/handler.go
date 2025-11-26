@@ -42,6 +42,16 @@ func GetBaseAnalytics(c *gin.Context) {}
 
 func GetInventoryPagenated(c *gin.Context) {}
 
+func GetCustomerSegments(c *gin.Context) {
+	segments, err := mongo.GetCustomerSpendingSegments(c.Request.Context())
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, global.ErrorResponse("Failed to fetch customer segments", nil))
+		return
+	}
+
+	c.JSON(http.StatusOK, global.SuccessResponse(segments))
+}
+
 func GetCustomerOrders(c *gin.Context) {
 	customerID := c.Param("id")
 

@@ -82,6 +82,7 @@ func InitializeRoutes() {
 		analytics := api.Group("/analytics")
 		{
 			analytics.GET("/", nil)
+			analytics.GET("/customers/segments", GetCustomerSegments)
 		}
 
 		admin := api.Group("/admin")
