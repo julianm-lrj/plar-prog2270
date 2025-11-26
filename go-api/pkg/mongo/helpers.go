@@ -3,6 +3,7 @@ package mongo
 import (
 	"context"
 	"errors"
+	"time"
 
 	"go.mongodb.org/mongo-driver/v2/bson"
 	"go.mongodb.org/mongo-driver/v2/mongo/options"
@@ -244,4 +245,64 @@ func GetCustomerByID(ctx context.Context, customerID bson.ObjectID) (*models.Cus
 	}
 
 	return &customer, nil
+}
+
+// UpdateCustomer updates a customer profile with partial updates
+func UpdateCustomer(ctx context.Context, customerID bson.ObjectID, req *models.UpdateCustomerRequest) (*models.Customer, error) {
+	collection := GetCollection("customers")
+
+	// Build update document with only provided fields
+	updateDoc := bson.D{}
+
+	if req.FirstName != nil {
+		updateDoc = append(updateDoc, bson.E{Key: "first_name", Value: *req.FirstName})
+	}
+	if req.LastName != nil {
+		updateDoc = append(updateDoc, bson.E{Key: "last_name", Value: *req.LastName})
+	}
+	if req.Phone != nil {
+		updateDoc = append(updateDoc, bson.E{Key: "phone", Value: *req.Phone})
+	}
+	if req.Addresses != nil {
+		updateDoc = append(updateDoc, bson.E{Key: "addresses", Value: req.Addresses})
+	}
+	if req.Preferences != nil {
+		updateDoc = append(updateDoc, bson.E{Key: "preferences", Value: *req.Preferences})
+	}
+	if req.AccountStatus != nil {
+		updateDoc = append(updateDoc, bson.E{Key: "account_status", Value: *req.AccountStatus})
+	}
+
+	// Always update the updated_at timestamp
+	updateDoc = append(updateDoc, bson.E{Key: "updated_at", Value: time.Now()})
+
+	// Email cannot be updated (not included in update document)
+
+	if len(updateDoc) == 1 { // Only updated_at was added
+		return nil, errors.New("no fields to update")
+	}
+
+	update := bson.D{{Key: "$set", Value: updateDoc}}
+
+	// Find and update, returning the updated document
+	findOptions := options.FindOneAndUpdate().SetReturnDocument(options.After)
+	// Exclude password from response
+	findOptions.SetProjection(bson.D{{Key: "password", Value: 0}})
+
+	var updatedCustomer models.Customer
+	err := collection.FindOneAndUpdate(
+		ctx,
+		bson.D{{Key: "_id", Value: customerID}},
+		update,
+		findOptions,
+	).Decode(&updatedCustomer)
+
+	if err != nil {
+		if err.Error() == "mongo: no documents in result" {
+			return nil, errors.New("customer not found")
+		}
+		return nil, err
+	}
+
+	return &updatedCustomer, nil
 }

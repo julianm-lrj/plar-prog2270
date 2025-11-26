@@ -72,7 +72,6 @@ func GetCustomerOrders(c *gin.Context) {
 	c.JSON(http.StatusOK, global.SuccessResponse(result))
 }
 
-// CreateCustomer creates a new customer account
 func CreateCustomer(c *gin.Context) {
 	var req models.CreateCustomerRequest
 
@@ -132,7 +131,6 @@ func CreateCustomer(c *gin.Context) {
 	c.JSON(http.StatusCreated, global.SuccessResponse(createdCustomer))
 }
 
-// GetCustomerByID retrieves a customer profile by ID
 func GetCustomerByID(c *gin.Context) {
 	customerID := c.Param("id")
 
@@ -161,4 +159,42 @@ func GetCustomerByID(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, global.SuccessResponse(customer))
+}
+
+func UpdateCustomer(c *gin.Context) {
+	customerID := c.Param("id")
+
+	// Validate ObjectID format
+	objectID, err := bson.ObjectIDFromHex(customerID)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("Invalid customer ID format", []global.ValidationError{
+			{Field: "id", Message: "Must be a valid MongoDB ObjectID", Code: "invalid_format"},
+		}))
+		return
+	}
+
+	// In Production, this would be protected to allow only the customer themselves or admins to access the data
+
+	// Bind request payload
+	var req models.UpdateCustomerRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("Invalid request data", []global.ValidationError{
+			{Field: "request", Message: err.Error(), Code: "validation_error"},
+		}))
+		return
+	}
+
+	updatedCustomer, err := mongo.UpdateCustomer(c.Request.Context(), objectID, &req)
+	if err != nil {
+		if err.Error() == "customer not found" {
+			c.JSON(http.StatusNotFound, global.ErrorResponse("Customer not found", []global.ValidationError{
+				{Field: "id", Message: "No customer exists with this ID", Code: "not_found"},
+			}))
+			return
+		}
+		c.JSON(http.StatusInternalServerError, global.ErrorResponse("Failed to update customer", nil))
+		return
+	}
+
+	c.JSON(http.StatusOK, global.SuccessResponse(updatedCustomer))
 }

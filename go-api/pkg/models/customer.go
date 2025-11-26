@@ -6,7 +6,6 @@ import (
 	"go.mongodb.org/mongo-driver/v2/bson"
 )
 
-// Customer represents a customer in the e-commerce system
 type Customer struct {
 	ID            bson.ObjectID `bson:"_id,omitempty" json:"id"`
 	Email         string        `bson:"email" json:"email" validate:"required,email"`
@@ -27,7 +26,6 @@ type Customer struct {
 	UpdatedAt     time.Time     `bson:"updated_at" json:"updated_at"`
 }
 
-// CreateCustomerRequest represents the request payload for creating a new customer
 type CreateCustomerRequest struct {
 	Email     string  `json:"email" validate:"required,email"`
 	Password  string  `json:"password" validate:"required,min=8"`
@@ -37,7 +35,15 @@ type CreateCustomerRequest struct {
 	Address   Address `json:"address" validate:"required"`
 }
 
-// Preferences represents customer preferences and settings
+type UpdateCustomerRequest struct {
+	FirstName     *string      `json:"first_name,omitempty" validate:"omitempty,min=2,max=50"`
+	LastName      *string      `json:"last_name,omitempty" validate:"omitempty,min=2,max=50"`
+	Phone         *string      `json:"phone,omitempty" validate:"omitempty,min=10,max=20"`
+	Addresses     []Address    `json:"addresses,omitempty" validate:"omitempty,dive"`
+	Preferences   *Preferences `json:"preferences,omitempty"`
+	AccountStatus *string      `json:"account_status,omitempty" validate:"omitempty,oneof=active inactive suspended deleted"`
+}
+
 type Preferences struct {
 	Newsletter         bool     `bson:"newsletter" json:"newsletter"`
 	SMSNotifications   bool     `bson:"sms_notifications" json:"sms_notifications"`
@@ -47,7 +53,6 @@ type Preferences struct {
 	FavoriteCategories []string `bson:"favorite_categories,omitempty" json:"favorite_categories,omitempty"`
 }
 
-// SetTimestamps sets created_at on first call and always updates updated_at
 func (c *Customer) SetTimestamps() {
 	now := time.Now()
 	if c.CreatedAt.IsZero() {
@@ -56,12 +61,10 @@ func (c *Customer) SetTimestamps() {
 	c.UpdatedAt = now
 }
 
-// GetFullName returns the customer's full name
 func (c *Customer) GetFullName() string {
 	return c.FirstName + " " + c.LastName
 }
 
-// AddLoyaltyPoints adds points to the customer's loyalty account
 func (c *Customer) AddLoyaltyPoints(points int) {
 	if points > 0 {
 		c.LoyaltyPoints += points
@@ -69,7 +72,6 @@ func (c *Customer) AddLoyaltyPoints(points int) {
 	}
 }
 
-// RedeemLoyaltyPoints subtracts points from the customer's account
 func (c *Customer) RedeemLoyaltyPoints(points int) bool {
 	if points > 0 && c.LoyaltyPoints >= points {
 		c.LoyaltyPoints -= points
@@ -79,7 +81,6 @@ func (c *Customer) RedeemLoyaltyPoints(points int) bool {
 	return false
 }
 
-// GetDefaultAddress returns the first address marked as default, or the first address if none is default
 func (c *Customer) GetDefaultAddress() *Address {
 	for i := range c.Addresses {
 		if c.Addresses[i].IsDefault {
@@ -92,9 +93,7 @@ func (c *Customer) GetDefaultAddress() *Address {
 	return nil
 }
 
-// AddAddress adds a new address to the customer's address list
 func (c *Customer) AddAddress(address Address) {
-	// If this is the first address, make it default
 	if len(c.Addresses) == 0 {
 		address.IsDefault = true
 	}
@@ -102,7 +101,6 @@ func (c *Customer) AddAddress(address Address) {
 	c.UpdatedAt = time.Now()
 }
 
-// SetDefaultAddress sets the specified address as default and unsets all others
 func (c *Customer) SetDefaultAddress(addressIndex int) bool {
 	if addressIndex < 0 || addressIndex >= len(c.Addresses) {
 		return false
@@ -115,22 +113,18 @@ func (c *Customer) SetDefaultAddress(addressIndex int) bool {
 	return true
 }
 
-// IsActive checks if the customer account is active
 func (c *Customer) IsActive() bool {
 	return c.AccountStatus == "active"
 }
 
-// IsSuspended checks if the customer account is suspended
 func (c *Customer) IsSuspended() bool {
 	return c.AccountStatus == "suspended"
 }
 
-// IsVerified checks if both email and phone are verified
 func (c *Customer) IsVerified() bool {
 	return c.EmailVerified && c.PhoneVerified
 }
 
-// UpdateOrderStats updates the customer's order statistics
 func (c *Customer) UpdateOrderStats(orderAmount float64) {
 	c.TotalOrders++
 	c.TotalSpent += orderAmount
@@ -138,7 +132,6 @@ func (c *Customer) UpdateOrderStats(orderAmount float64) {
 	c.UpdatedAt = time.Now()
 }
 
-// CalculateLoyaltyTier returns the loyalty tier based on points
 func (c *Customer) CalculateLoyaltyTier() string {
 	switch {
 	case c.LoyaltyPoints >= 10000:
@@ -152,7 +145,6 @@ func (c *Customer) CalculateLoyaltyTier() string {
 	}
 }
 
-// GetAverageOrderValue returns the average order value
 func (c *Customer) GetAverageOrderValue() float64 {
 	if c.TotalOrders == 0 {
 		return 0.0
