@@ -27,6 +27,7 @@ func GetAllProducts(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, global.ErrorResponse("Failed to get products", nil))
 		return
 	}
+
 	c.JSON(http.StatusOK, global.SuccessResponse(products))
 }
 

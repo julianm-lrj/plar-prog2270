@@ -35,12 +35,15 @@ func InitializeRoutes() {
 			products.GET("/:id", nil)
 			products.PUT("/:id", nil)
 			products.DELETE("/:id", nil)
-			products.GET("/categories", nil)
-			products.POST("/categories", nil)
-			products.GET("/categories/:id", nil)
-			products.PUT("/categories/:id", nil)
-			products.DELETE("/categories/:id", nil)
-			products.GET("/search", nil)
+		}
+
+		categories := api.Group("/categories")
+		{
+			categories.GET("/", nil)
+			categories.POST("/", nil)
+			categories.GET("/:id", nil)
+			categories.PUT("/:id", nil)
+			categories.DELETE("/:id", nil)
 		}
 
 		orders := api.Group("/orders")
