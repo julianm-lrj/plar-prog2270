@@ -93,6 +93,63 @@ func GetAllCustomers() ([]bson.M, error) {
 	return items, nil
 }
 
+// GetProductBySKU retrieves a single product by its SKU
+func GetProductBySKU(ctx context.Context, sku string) (*models.Product, error) {
+	collection := GetCollection("products")
+
+	var product models.Product
+	err := collection.FindOne(ctx, bson.D{{"sku", sku}}).Decode(&product)
+	if err != nil {
+		return nil, err
+	}
+
+	return &product, nil
+}
+
+// UpdateProductBySKU updates specific fields of a product by SKU and returns the updated product
+func UpdateProductBySKU(ctx context.Context, sku string, updates map[string]interface{}) (*models.Product, error) {
+	collection := GetCollection("products")
+
+	// Add updated_at timestamp to the updates
+	updates["updated_at"] = time.Now()
+
+	// Create update document
+	updateDoc := bson.D{{"$set", updates}}
+
+	// Update the document
+	_, err := collection.UpdateOne(ctx, bson.D{{"sku", sku}}, updateDoc)
+	if err != nil {
+		return nil, err
+	}
+
+	// Fetch and return the updated product
+	return GetProductBySKU(ctx, sku)
+}
+
+// DeleteProductBySKU deletes a product by SKU and returns the deleted product info
+func DeleteProductBySKU(ctx context.Context, sku string) (*models.Product, error) {
+	collection := GetCollection("products")
+
+	// First get the product to return it and for cache cleanup
+	product, err := GetProductBySKU(ctx, sku)
+	if err != nil {
+		return nil, err
+	}
+
+	// Delete the document
+	result, err := collection.DeleteOne(ctx, bson.D{{"sku", sku}})
+	if err != nil {
+		return nil, err
+	}
+
+	// Check if document was actually deleted
+	if result.DeletedCount == 0 {
+		return nil, errors.New("mongo: no documents in result")
+	}
+
+	return product, nil
+}
+
 func GetAllReviews() ([]bson.M, error) {
 	ctx, cancel := global.GetDefaultTimer()
 	defer cancel()
