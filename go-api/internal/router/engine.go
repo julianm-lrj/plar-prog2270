@@ -26,6 +26,7 @@ func InitializeRoutes() {
 	api := Router.Group("/api")
 	{
 		api.GET("/health", HealthCheck)
+		api.GET("/search", nil)
 
 		products := api.Group("/products")
 		{
