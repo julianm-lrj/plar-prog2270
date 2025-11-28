@@ -1,6 +1,6 @@
 [
   {
-    "sku": "BOOK-SCIE-001",
+    
     "name": "Modern Science",
     "description": "High-quality science from Cambridge Press. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -43,7 +43,7 @@
     }
   },
   {
-    "sku": "SPOR-FITN-002",
+    
     "name": "Premium Fitne Bundle",
     "description": "High-quality fitness from OutdoorAdventure. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -86,7 +86,7 @@
     }
   },
   {
-    "sku": "CLOT-DRES-003",
+    
     "name": "Super Dresse",
     "description": "High-quality dresses from BasicWear. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -129,7 +129,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-004",
+    
     "name": "Modern Accessorie Pack",
     "description": "High-quality accessories from UrbanWear. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -171,7 +171,7 @@
     }
   },
   {
-    "sku": "SPOR-OUTD-005",
+    
     "name": "Ultimate Outdoor",
     "description": "High-quality outdoor from FitPro. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -213,7 +213,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-006",
+    
     "name": "Pro Accessorie",
     "description": "High-quality accessories from UrbanWear. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -256,7 +256,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-007",
+    
     "name": "Essential Kitchen Model",
     "description": "High-quality kitchen from StyleSpace. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -298,7 +298,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-008",
+    
     "name": "Deluxe Fragrance Bundle",
     "description": "High-quality fragrances from PureBeauty. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -341,7 +341,7 @@
     }
   },
   {
-    "sku": "TOYS-OUTD-009",
+    
     "name": "Top Outdoor Toy System",
     "description": "High-quality outdoor toys from LearnPlay. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -384,7 +384,7 @@
     }
   },
   {
-    "sku": "BOOK-SELF-010",
+    
     "name": "Essential Self-Help System",
     "description": "High-quality self-help from Penguin. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -426,7 +426,7 @@
     }
   },
   {
-    "sku": "SPOR-FITN-011",
+    
     "name": "Essential Fitne",
     "description": "High-quality fitness from AthleticGear. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -468,7 +468,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-012",
+    
     "name": "Ultimate Decor",
     "description": "High-quality decor from StyleSpace. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -511,7 +511,7 @@
     }
   },
   {
-    "sku": "BOOK-SELF-013",
+    
     "name": "Elite Self-Help Collection",
     "description": "High-quality self-help from Cambridge Press. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -554,7 +554,7 @@
     }
   },
   {
-    "sku": "BEAU-TOOL-014",
+    
     "name": "Pro Tool",
     "description": "High-quality tools from NaturalGlow. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -596,7 +596,7 @@
     }
   },
   {
-    "sku": "ELEC-AUDI-015",
+    
     "name": "Super Audio",
     "description": "High-quality audio from GameMax. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -638,7 +638,7 @@
     }
   },
   {
-    "sku": "HOME-BATH-016",
+    
     "name": "Ultimate Bathroom Kit",
     "description": "High-quality bathroom from CozyHome. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -681,7 +681,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-017",
+    
     "name": "Elite Kitchen Kit",
     "description": "High-quality kitchen from ComfortPlus. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -724,7 +724,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-018",
+    
     "name": "Modern Accessorie Bundle",
     "description": "High-quality accessories from StyleHub. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -766,7 +766,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-019",
+    
     "name": "Essential Kitchen System",
     "description": "High-quality kitchen from StyleSpace. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -809,7 +809,7 @@
     }
   },
   {
-    "sku": "TOYS-EDUC-020",
+    
     "name": "Pro Educational Edition",
     "description": "High-quality educational from AdventurePlay. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -851,7 +851,7 @@
     }
   },
   {
-    "sku": "CLOT-OUTE-021",
+    
     "name": "Top Outerwear",
     "description": "High-quality outerwear from StyleHub. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -894,7 +894,7 @@
     }
   },
   {
-    "sku": "BOOK-SELF-022",
+    
     "name": "Mega Self-Help",
     "description": "High-quality self-help from O'Reilly. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -936,7 +936,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-023",
+    
     "name": "Best Pantry Collection",
     "description": "High-quality pantry from HealthyBites. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -979,7 +979,7 @@
     }
   },
   {
-    "sku": "TOYS-EDUC-024",
+    
     "name": "Pro Educational Edition",
     "description": "High-quality educational from PlayMax. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -1022,7 +1022,7 @@
     }
   },
   {
-    "sku": "SPOR-WINT-025",
+    
     "name": "Advanced Winter Sport Series",
     "description": "High-quality winter sports from FitPro. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -1064,7 +1064,7 @@
     }
   },
   {
-    "sku": "ELEC-GAMI-026",
+    
     "name": "Elite Gaming Version",
     "description": "High-quality gaming from ProGear. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -1107,7 +1107,7 @@
     }
   },
   {
-    "sku": "HOME-BEDR-027",
+    
     "name": "Best Bedroom Bundle",
     "description": "High-quality bedroom from HomeMax. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -1150,7 +1150,7 @@
     }
   },
   {
-    "sku": "ELEC-COMP-028",
+    
     "name": "Pro Computer",
     "description": "High-quality computers from TechBrand. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -1193,7 +1193,7 @@
     }
   },
   {
-    "sku": "TOYS-ACTI-029",
+    
     "name": "Ultra Action Figure Set",
     "description": "High-quality action figures from CreativeKids. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -1235,7 +1235,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-030",
+    
     "name": "Top Skincare",
     "description": "High-quality skincare from NaturalGlow. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -1277,7 +1277,7 @@
     }
   },
   {
-    "sku": "ELEC-COMP-031",
+    
     "name": "Top Computer",
     "description": "High-quality computers from MobileTech. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -1319,7 +1319,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-032",
+    
     "name": "Essential Pantry Collection",
     "description": "High-quality pantry from OrganicFarms. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -1361,7 +1361,7 @@
     }
   },
   {
-    "sku": "BOOK-FICT-033",
+    
     "name": "Ultra Fiction",
     "description": "High-quality fiction from Penguin. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -1403,7 +1403,7 @@
     }
   },
   {
-    "sku": "BOOK-FICT-034",
+    
     "name": "Best Fiction Edition",
     "description": "High-quality fiction from HarperCollins. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -1446,7 +1446,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-035",
+    
     "name": "Essential Decor Edition",
     "description": "High-quality decor from CozyHome. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -1488,7 +1488,7 @@
     }
   },
   {
-    "sku": "ELEC-AUDI-036",
+    
     "name": "Ultimate Audio Version",
     "description": "High-quality audio from TechBrand. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -1531,7 +1531,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-037",
+    
     "name": "Super Fragrance",
     "description": "High-quality fragrances from LuxeCosmetics. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -1574,7 +1574,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-038",
+    
     "name": "Pro Kitchen",
     "description": "High-quality kitchen from StyleSpace. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -1617,7 +1617,7 @@
     }
   },
   {
-    "sku": "ELEC-MOBI-039",
+    
     "name": "Ultra Mobile Phone Kit",
     "description": "High-quality mobile phones from FitWear. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -1660,7 +1660,7 @@
     }
   },
   {
-    "sku": "BOOK-BUSI-040",
+    
     "name": "Ultimate Busine Bundle",
     "description": "High-quality business from Penguin. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -1702,7 +1702,7 @@
     }
   },
   {
-    "sku": "BOOK-SCIE-041",
+    
     "name": "Classic Science",
     "description": "High-quality science from Cambridge Press. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -1744,7 +1744,7 @@
     }
   },
   {
-    "sku": "TOYS-ACTI-042",
+    
     "name": "Classic Action Figure",
     "description": "High-quality action figures from AdventurePlay. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -1787,7 +1787,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-043",
+    
     "name": "Elite Fragrance Set",
     "description": "High-quality fragrances from RadiantSkin. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -1830,7 +1830,7 @@
     }
   },
   {
-    "sku": "ELEC-GAMI-044",
+    
     "name": "Best Gaming Edition",
     "description": "High-quality gaming from MobileTech. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -1873,7 +1873,7 @@
     }
   },
   {
-    "sku": "TOYS-EDUC-045",
+    
     "name": "Professional Educational",
     "description": "High-quality educational from AdventurePlay. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -1915,7 +1915,7 @@
     }
   },
   {
-    "sku": "CLOT-SHOE-046",
+    
     "name": "Essential Shoe Set",
     "description": "High-quality shoes from DenimCo. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -1958,7 +1958,7 @@
     }
   },
   {
-    "sku": "SPOR-TEAM-047",
+    
     "name": "Ultra Team Sport Bundle",
     "description": "High-quality team sports from SportMax. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -2001,7 +2001,7 @@
     }
   },
   {
-    "sku": "HOME-BEDR-048",
+    
     "name": "Professional Bedroom Kit",
     "description": "High-quality bedroom from HomeMax. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -2043,7 +2043,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-049",
+    
     "name": "Essential Specialty",
     "description": "High-quality specialty from OrganicFarms. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -2085,7 +2085,7 @@
     }
   },
   {
-    "sku": "CLOT-PANT-050",
+    
     "name": "Professional Pant Pack",
     "description": "High-quality pants from BasicWear. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -2128,7 +2128,7 @@
     }
   },
   {
-    "sku": "TOYS-EDUC-051",
+    
     "name": "Best Educational",
     "description": "High-quality educational from PlayMax. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -2171,7 +2171,7 @@
     }
   },
   {
-    "sku": "TOYS-EDUC-052",
+    
     "name": "Pro Educational Series",
     "description": "High-quality educational from AdventurePlay. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -2214,7 +2214,7 @@
     }
   },
   {
-    "sku": "TOYS-EDUC-053",
+    
     "name": "Deluxe Educational System",
     "description": "High-quality educational from CreativeKids. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -2257,7 +2257,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-054",
+    
     "name": "Top Specialty",
     "description": "High-quality specialty from OrganicFarms. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -2300,7 +2300,7 @@
     }
   },
   {
-    "sku": "TOYS-ACTI-055",
+    
     "name": "Modern Action Figure",
     "description": "High-quality action figures from CreativeKids. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -2342,7 +2342,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-056",
+    
     "name": "Ultra Accessorie",
     "description": "High-quality accessories from StyleHub. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -2385,7 +2385,7 @@
     }
   },
   {
-    "sku": "TOYS-BUIL-057",
+    
     "name": "Deluxe Building Set",
     "description": "High-quality building sets from FunToys. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -2428,7 +2428,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-058",
+    
     "name": "Best Skincare",
     "description": "High-quality skincare from PureBeauty. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -2470,7 +2470,7 @@
     }
   },
   {
-    "sku": "BEAU-MAKE-059",
+    
     "name": "Top Makeup Kit",
     "description": "High-quality makeup from LuxeCosmetics. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -2512,7 +2512,7 @@
     }
   },
   {
-    "sku": "ELEC-ACCE-060",
+    
     "name": "Advanced Accessorie Pack",
     "description": "High-quality accessories from SmartTech. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -2555,7 +2555,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-061",
+    
     "name": "Professional Pantry Model",
     "description": "High-quality pantry from PureHarvest. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -2598,7 +2598,7 @@
     }
   },
   {
-    "sku": "HOME-BATH-062",
+    
     "name": "Pro Bathroom",
     "description": "High-quality bathroom from HomeMax. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -2640,7 +2640,7 @@
     }
   },
   {
-    "sku": "HOME-LIVI-063",
+    
     "name": "Top Living Room Series",
     "description": "High-quality living room from ModernLiving. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -2682,7 +2682,7 @@
     }
   },
   {
-    "sku": "ELEC-GAMI-064",
+    
     "name": "Advanced Gaming System",
     "description": "High-quality gaming from SoundPro. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -2724,7 +2724,7 @@
     }
   },
   {
-    "sku": "FOOD-BEVE-065",
+    
     "name": "Classic Beverage Set",
     "description": "High-quality beverages from PureHarvest. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -2766,7 +2766,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-066",
+    
     "name": "Professional Decor",
     "description": "High-quality decor from HomeMax. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -2808,7 +2808,7 @@
     }
   },
   {
-    "sku": "TOYS-OUTD-067",
+    
     "name": "Mega Outdoor Toy Series",
     "description": "High-quality outdoor toys from AdventurePlay. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -2850,7 +2850,7 @@
     }
   },
   {
-    "sku": "BOOK-FICT-068",
+    
     "name": "Ultra Fiction Kit",
     "description": "High-quality fiction from Penguin. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -2892,7 +2892,7 @@
     }
   },
   {
-    "sku": "HOME-BATH-069",
+    
     "name": "Pro Bathroom",
     "description": "High-quality bathroom from ModernLiving. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -2935,7 +2935,7 @@
     }
   },
   {
-    "sku": "ELEC-ACCE-070",
+    
     "name": "Ultimate Accessorie System",
     "description": "High-quality accessories from ProGear. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -2977,7 +2977,7 @@
     }
   },
   {
-    "sku": "ELEC-AUDI-071",
+    
     "name": "Classic Audio",
     "description": "High-quality audio from ProGear. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -3019,7 +3019,7 @@
     }
   },
   {
-    "sku": "TOYS-OUTD-072",
+    
     "name": "Essential Outdoor Toy",
     "description": "High-quality outdoor toys from FunToys. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -3062,7 +3062,7 @@
     }
   },
   {
-    "sku": "BOOK-SELF-073",
+    
     "name": "Ultimate Self-Help",
     "description": "High-quality self-help from Oxford. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -3104,7 +3104,7 @@
     }
   },
   {
-    "sku": "BEAU-MAKE-074",
+    
     "name": "Premium Makeup",
     "description": "High-quality makeup from RadiantSkin. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -3147,7 +3147,7 @@
     }
   },
   {
-    "sku": "SPOR-FITN-075",
+    
     "name": "Elite Fitne Model",
     "description": "High-quality fitness from FitPro. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -3189,7 +3189,7 @@
     }
   },
   {
-    "sku": "HOME-LIVI-076",
+    
     "name": "Ultra Living Room Collection",
     "description": "High-quality living room from HomeMax. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -3232,7 +3232,7 @@
     }
   },
   {
-    "sku": "BEAU-MAKE-077",
+    
     "name": "Pro Makeup",
     "description": "High-quality makeup from NaturalGlow. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -3275,7 +3275,7 @@
     }
   },
   {
-    "sku": "SPOR-WATE-078",
+    
     "name": "Pro Water Sport",
     "description": "High-quality water sports from AthleticGear. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -3317,7 +3317,7 @@
     }
   },
   {
-    "sku": "BEAU-HAIR-079",
+    
     "name": "Modern Hair Care Series",
     "description": "High-quality hair care from LuxeCosmetics. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -3360,7 +3360,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-080",
+    
     "name": "Modern Decor",
     "description": "High-quality decor from StyleSpace. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -3402,7 +3402,7 @@
     }
   },
   {
-    "sku": "ELEC-GAMI-081",
+    
     "name": "Ultra Gaming Version",
     "description": "High-quality gaming from GameMax. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -3445,7 +3445,7 @@
     }
   },
   {
-    "sku": "BOOK-FICT-082",
+    
     "name": "Ultra Fiction",
     "description": "High-quality fiction from HarperCollins. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -3487,7 +3487,7 @@
     }
   },
   {
-    "sku": "TOYS-PUZZ-083",
+    
     "name": "Super Puzzle Set",
     "description": "High-quality puzzles from PlayMax. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -3529,7 +3529,7 @@
     }
   },
   {
-    "sku": "ELEC-COMP-084",
+    
     "name": "Pro Computer",
     "description": "High-quality computers from SmartTech. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -3571,7 +3571,7 @@
     }
   },
   {
-    "sku": "SPOR-FITN-085",
+    
     "name": "Mega Fitne System",
     "description": "High-quality fitness from FitPro. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -3613,7 +3613,7 @@
     }
   },
   {
-    "sku": "TOYS-EDUC-086",
+    
     "name": "Advanced Educational",
     "description": "High-quality educational from FunToys. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -3655,7 +3655,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-087",
+    
     "name": "Pro Decor Version",
     "description": "High-quality decor from ModernLiving. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -3697,7 +3697,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-088",
+    
     "name": "Best Decor Version",
     "description": "High-quality decor from HomeMax. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -3740,7 +3740,7 @@
     }
   },
   {
-    "sku": "ELEC-AUDI-089",
+    
     "name": "Pro Audio",
     "description": "High-quality audio from SmartTech. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -3783,7 +3783,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-090",
+    
     "name": "Modern Accessorie",
     "description": "High-quality accessories from StyleHub. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -3825,7 +3825,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-091",
+    
     "name": "Modern Decor",
     "description": "High-quality decor from ComfortPlus. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -3868,7 +3868,7 @@
     }
   },
   {
-    "sku": "CLOT-PANT-092",
+    
     "name": "Top Pant",
     "description": "High-quality pants from OutdoorGear. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -3911,7 +3911,7 @@
     }
   },
   {
-    "sku": "ELEC-TABL-093",
+    
     "name": "Ultimate Tablet Edition",
     "description": "High-quality tablets from PhotoMax. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -3954,7 +3954,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-094",
+    
     "name": "Super Kitchen Collection",
     "description": "High-quality kitchen from HomeMax. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -3996,7 +3996,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-095",
+    
     "name": "Modern Decor",
     "description": "High-quality decor from ComfortPlus. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -4038,7 +4038,7 @@
     }
   },
   {
-    "sku": "CLOT-SHOE-096",
+    
     "name": "Ultra Shoe",
     "description": "High-quality shoes from OutdoorGear. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -4081,7 +4081,7 @@
     }
   },
   {
-    "sku": "ELEC-CAME-097",
+    
     "name": "Pro Camera Pack",
     "description": "High-quality cameras from FitWear. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -4124,7 +4124,7 @@
     }
   },
   {
-    "sku": "CLOT-OUTE-098",
+    
     "name": "Top Outerwear Set",
     "description": "High-quality outerwear from OutdoorGear. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -4167,7 +4167,7 @@
     }
   },
   {
-    "sku": "BOOK-NON--099",
+    
     "name": "Elite Non-Fiction",
     "description": "High-quality non-fiction from O'Reilly. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -4210,7 +4210,7 @@
     }
   },
   {
-    "sku": "ELEC-AUDI-100",
+    
     "name": "Deluxe Audio",
     "description": "High-quality audio from SoundPro. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -4252,7 +4252,7 @@
     }
   },
   {
-    "sku": "BOOK-FICT-101",
+    
     "name": "Premium Fiction Collection",
     "description": "High-quality fiction from O'Reilly. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -4294,7 +4294,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-102",
+    
     "name": "Professional Pantry",
     "description": "High-quality pantry from GourmetFood. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -4337,7 +4337,7 @@
     }
   },
   {
-    "sku": "TOYS-EDUC-103",
+    
     "name": "Mega Educational",
     "description": "High-quality educational from CreativeKids. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -4379,7 +4379,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-104",
+    
     "name": "Ultimate Decor",
     "description": "High-quality decor from StyleSpace. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -4422,7 +4422,7 @@
     }
   },
   {
-    "sku": "CLOT-OUTE-105",
+    
     "name": "Mega Outerwear",
     "description": "High-quality outerwear from UrbanWear. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -4465,7 +4465,7 @@
     }
   },
   {
-    "sku": "ELEC-CAME-106",
+    
     "name": "Professional Camera",
     "description": "High-quality cameras from PhotoMax. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -4507,7 +4507,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-107",
+    
     "name": "Top Decor Bundle",
     "description": "High-quality decor from ModernLiving. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -4550,7 +4550,7 @@
     }
   },
   {
-    "sku": "BEAU-MAKE-108",
+    
     "name": "Mega Makeup Kit",
     "description": "High-quality makeup from NaturalGlow. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -4593,7 +4593,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-109",
+    
     "name": "Modern Fragrance",
     "description": "High-quality fragrances from NaturalGlow. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -4636,7 +4636,7 @@
     }
   },
   {
-    "sku": "BOOK-FICT-110",
+    
     "name": "Top Fiction Series",
     "description": "High-quality fiction from Oxford. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -4679,7 +4679,7 @@
     }
   },
   {
-    "sku": "CLOT-SHOE-111",
+    
     "name": "Top Shoe",
     "description": "High-quality shoes from StyleHub. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -4721,7 +4721,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-112",
+    
     "name": "Modern Skincare",
     "description": "High-quality skincare from PureBeauty. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -4764,7 +4764,7 @@
     }
   },
   {
-    "sku": "ELEC-ACCE-113",
+    
     "name": "Super Accessorie Set",
     "description": "High-quality accessories from FitWear. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -4806,7 +4806,7 @@
     }
   },
   {
-    "sku": "SPOR-FITN-114",
+    
     "name": "Premium Fitne",
     "description": "High-quality fitness from SportMax. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -4848,7 +4848,7 @@
     }
   },
   {
-    "sku": "CLOT-SHOE-115",
+    
     "name": "Top Shoe Bundle",
     "description": "High-quality shoes from OutdoorGear. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -4890,7 +4890,7 @@
     }
   },
   {
-    "sku": "BOOK-SELF-116",
+    
     "name": "Ultimate Self-Help",
     "description": "High-quality self-help from Cambridge Press. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -4932,7 +4932,7 @@
     }
   },
   {
-    "sku": "BEAU-TOOL-117",
+    
     "name": "Essential Tool",
     "description": "High-quality tools from LuxeCosmetics. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -4975,7 +4975,7 @@
     }
   },
   {
-    "sku": "CLOT-T-SH-118",
+    
     "name": "Super T-Shirt",
     "description": "High-quality t-shirts from StyleHub. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -5018,7 +5018,7 @@
     }
   },
   {
-    "sku": "BOOK-SCIE-119",
+    
     "name": "Deluxe Science Model",
     "description": "High-quality science from Penguin. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -5060,7 +5060,7 @@
     }
   },
   {
-    "sku": "ELEC-CAME-120",
+    
     "name": "Top Camera",
     "description": "High-quality cameras from FitWear. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -5102,7 +5102,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-121",
+    
     "name": "Premium Fragrance",
     "description": "High-quality fragrances from GlowLab. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -5145,7 +5145,7 @@
     }
   },
   {
-    "sku": "CLOT-OUTE-122",
+    
     "name": "Deluxe Outerwear",
     "description": "High-quality outerwear from BasicWear. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -5187,7 +5187,7 @@
     }
   },
   {
-    "sku": "BOOK-EDUC-123",
+    
     "name": "Advanced Education Set",
     "description": "High-quality education from Penguin. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -5230,7 +5230,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-124",
+    
     "name": "Premium Specialty Set",
     "description": "High-quality specialty from PureHarvest. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -5273,7 +5273,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-125",
+    
     "name": "Ultra Specialty Series",
     "description": "High-quality specialty from OrganicFarms. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -5315,7 +5315,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-126",
+    
     "name": "Ultimate Fragrance",
     "description": "High-quality fragrances from RadiantSkin. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -5357,7 +5357,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-127",
+    
     "name": "Pro Specialty Pack",
     "description": "High-quality specialty from GourmetFood. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -5399,7 +5399,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-128",
+    
     "name": "Top Specialty Version",
     "description": "High-quality specialty from HealthyBites. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -5441,7 +5441,7 @@
     }
   },
   {
-    "sku": "ELEC-MOBI-129",
+    
     "name": "Essential Mobile Phone",
     "description": "High-quality mobile phones from SmartTech. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -5484,7 +5484,7 @@
     }
   },
   {
-    "sku": "TOYS-ACTI-130",
+    
     "name": "Advanced Action Figure Set",
     "description": "High-quality action figures from LearnPlay. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -5526,7 +5526,7 @@
     }
   },
   {
-    "sku": "CLOT-PANT-131",
+    
     "name": "Professional Pant Version",
     "description": "High-quality pants from DenimCo. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -5569,7 +5569,7 @@
     }
   },
   {
-    "sku": "BOOK-FICT-132",
+    
     "name": "Premium Fiction Series",
     "description": "High-quality fiction from Penguin. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -5611,7 +5611,7 @@
     }
   },
   {
-    "sku": "CLOT-SHOE-133",
+    
     "name": "Ultimate Shoe",
     "description": "High-quality shoes from OutdoorGear. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -5654,7 +5654,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-134",
+    
     "name": "Ultimate Skincare",
     "description": "High-quality skincare from PureBeauty. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -5697,7 +5697,7 @@
     }
   },
   {
-    "sku": "HOME-BATH-135",
+    
     "name": "Ultra Bathroom",
     "description": "High-quality bathroom from CozyHome. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -5739,7 +5739,7 @@
     }
   },
   {
-    "sku": "FOOD-SNAC-136",
+    
     "name": "Mega Snack",
     "description": "High-quality snacks from OrganicFarms. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -5782,7 +5782,7 @@
     }
   },
   {
-    "sku": "ELEC-COMP-137",
+    
     "name": "Mega Computer Collection",
     "description": "High-quality computers from SmartTech. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -5824,7 +5824,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-138",
+    
     "name": "Top Fragrance",
     "description": "High-quality fragrances from RadiantSkin. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -5867,7 +5867,7 @@
     }
   },
   {
-    "sku": "CLOT-DRES-139",
+    
     "name": "Elite Dresse",
     "description": "High-quality dresses from UrbanWear. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -5910,7 +5910,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-140",
+    
     "name": "Ultimate Kitchen",
     "description": "High-quality kitchen from CozyHome. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -5953,7 +5953,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-141",
+    
     "name": "Ultra Decor Pack",
     "description": "High-quality decor from HomeMax. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -5995,7 +5995,7 @@
     }
   },
   {
-    "sku": "FOOD-ORGA-142",
+    
     "name": "Mega Organic",
     "description": "High-quality organic from OrganicFarms. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -6038,7 +6038,7 @@
     }
   },
   {
-    "sku": "CLOT-DRES-143",
+    
     "name": "Super Dresse",
     "description": "High-quality dresses from UrbanWear. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -6081,7 +6081,7 @@
     }
   },
   {
-    "sku": "HOME-STOR-144",
+    
     "name": "Top Storage",
     "description": "High-quality storage from StyleSpace. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -6124,7 +6124,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-145",
+    
     "name": "Essential Accessorie Kit",
     "description": "High-quality accessories from UrbanWear. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -6166,7 +6166,7 @@
     }
   },
   {
-    "sku": "HOME-BEDR-146",
+    
     "name": "Mega Bedroom Kit",
     "description": "High-quality bedroom from CozyHome. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -6208,7 +6208,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-147",
+    
     "name": "Professional Skincare Bundle",
     "description": "High-quality skincare from NaturalGlow. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -6250,7 +6250,7 @@
     }
   },
   {
-    "sku": "ELEC-GAMI-148",
+    
     "name": "Best Gaming",
     "description": "High-quality gaming from SmartTech. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -6292,7 +6292,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-149",
+    
     "name": "Top Fragrance",
     "description": "High-quality fragrances from LuxeCosmetics. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -6335,7 +6335,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-150",
+    
     "name": "Pro Skincare Kit",
     "description": "High-quality skincare from GlowLab. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -6377,7 +6377,7 @@
     }
   },
   {
-    "sku": "SPOR-WINT-151",
+    
     "name": "Modern Winter Sport Model",
     "description": "High-quality winter sports from OutdoorAdventure. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -6419,7 +6419,7 @@
     }
   },
   {
-    "sku": "CLOT-OUTE-152",
+    
     "name": "Ultimate Outerwear Pack",
     "description": "High-quality outerwear from DenimCo. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -6462,7 +6462,7 @@
     }
   },
   {
-    "sku": "TOYS-ACTI-153",
+    
     "name": "Ultra Action Figure Pack",
     "description": "High-quality action figures from PlayMax. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -6504,7 +6504,7 @@
     }
   },
   {
-    "sku": "SPOR-TEAM-154",
+    
     "name": "Mega Team Sport Edition",
     "description": "High-quality team sports from ActiveLife. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -6547,7 +6547,7 @@
     }
   },
   {
-    "sku": "SPOR-OUTD-155",
+    
     "name": "Essential Outdoor Collection",
     "description": "High-quality outdoor from ActiveLife. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -6589,7 +6589,7 @@
     }
   },
   {
-    "sku": "HOME-LIVI-156",
+    
     "name": "Mega Living Room Collection",
     "description": "High-quality living room from ModernLiving. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -6631,7 +6631,7 @@
     }
   },
   {
-    "sku": "ELEC-GAMI-157",
+    
     "name": "Premium Gaming Set",
     "description": "High-quality gaming from GameMax. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -6674,7 +6674,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-158",
+    
     "name": "Pro Accessorie Kit",
     "description": "High-quality accessories from FashionFirst. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -6717,7 +6717,7 @@
     }
   },
   {
-    "sku": "TOYS-PUZZ-159",
+    
     "name": "Modern Puzzle",
     "description": "High-quality puzzles from PlayMax. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -6759,7 +6759,7 @@
     }
   },
   {
-    "sku": "FOOD-BEVE-160",
+    
     "name": "Premium Beverage",
     "description": "High-quality beverages from PureHarvest. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -6802,7 +6802,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-161",
+    
     "name": "Best Specialty",
     "description": "High-quality specialty from NatureChoice. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -6845,7 +6845,7 @@
     }
   },
   {
-    "sku": "ELEC-WEAR-162",
+    
     "name": "Pro Wearable",
     "description": "High-quality wearables from MobileTech. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -6887,7 +6887,7 @@
     }
   },
   {
-    "sku": "HOME-STOR-163",
+    
     "name": "Super Storage",
     "description": "High-quality storage from ModernLiving. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -6930,7 +6930,7 @@
     }
   },
   {
-    "sku": "CLOT-OUTE-164",
+    
     "name": "Pro Outerwear",
     "description": "High-quality outerwear from StyleHub. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -6972,7 +6972,7 @@
     }
   },
   {
-    "sku": "BOOK-SELF-165",
+    
     "name": "Modern Self-Help Bundle",
     "description": "High-quality self-help from Oxford. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -7014,7 +7014,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-166",
+    
     "name": "Professional Kitchen Edition",
     "description": "High-quality kitchen from CozyHome. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -7056,7 +7056,7 @@
     }
   },
   {
-    "sku": "TOYS-BUIL-167",
+    
     "name": "Super Building Set Pack",
     "description": "High-quality building sets from PlayMax. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -7098,7 +7098,7 @@
     }
   },
   {
-    "sku": "HOME-STOR-168",
+    
     "name": "Premium Storage System",
     "description": "High-quality storage from HomeMax. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -7140,7 +7140,7 @@
     }
   },
   {
-    "sku": "SPOR-OUTD-169",
+    
     "name": "Top Outdoor Collection",
     "description": "High-quality outdoor from FitPro. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -7182,7 +7182,7 @@
     }
   },
   {
-    "sku": "SPOR-CYCL-170",
+    
     "name": "Elite Cycling",
     "description": "High-quality cycling from AthleticGear. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -7225,7 +7225,7 @@
     }
   },
   {
-    "sku": "ELEC-AUDI-171",
+    
     "name": "Deluxe Audio",
     "description": "High-quality audio from GameMax. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -7268,7 +7268,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-172",
+    
     "name": "Professional Skincare",
     "description": "High-quality skincare from NaturalGlow. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -7311,7 +7311,7 @@
     }
   },
   {
-    "sku": "TOYS-OUTD-173",
+    
     "name": "Classic Outdoor Toy System",
     "description": "High-quality outdoor toys from PlayMax. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -7353,7 +7353,7 @@
     }
   },
   {
-    "sku": "TOYS-OUTD-174",
+    
     "name": "Advanced Outdoor Toy Set",
     "description": "High-quality outdoor toys from FunToys. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -7395,7 +7395,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-175",
+    
     "name": "Deluxe Skincare",
     "description": "High-quality skincare from RadiantSkin. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -7437,7 +7437,7 @@
     }
   },
   {
-    "sku": "ELEC-CAME-176",
+    
     "name": "Best Camera",
     "description": "High-quality cameras from ProGear. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -7479,7 +7479,7 @@
     }
   },
   {
-    "sku": "CLOT-PANT-177",
+    
     "name": "Essential Pant Model",
     "description": "High-quality pants from DenimCo. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -7521,7 +7521,7 @@
     }
   },
   {
-    "sku": "BEAU-HAIR-178",
+    
     "name": "Best Hair Care",
     "description": "High-quality hair care from PureBeauty. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -7564,7 +7564,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-179",
+    
     "name": "Modern Specialty",
     "description": "High-quality specialty from OrganicFarms. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -7606,7 +7606,7 @@
     }
   },
   {
-    "sku": "CLOT-T-SH-180",
+    
     "name": "Classic T-Shirt",
     "description": "High-quality t-shirts from DenimCo. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -7649,7 +7649,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-181",
+    
     "name": "Modern Accessorie Kit",
     "description": "High-quality accessories from BasicWear. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -7692,7 +7692,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-182",
+    
     "name": "Classic Pantry",
     "description": "High-quality pantry from HealthyBites. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -7735,7 +7735,7 @@
     }
   },
   {
-    "sku": "BEAU-HAIR-183",
+    
     "name": "Professional Hair Care",
     "description": "High-quality hair care from RadiantSkin. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -7777,7 +7777,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-184",
+    
     "name": "Essential Skincare",
     "description": "High-quality skincare from GlowLab. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -7819,7 +7819,7 @@
     }
   },
   {
-    "sku": "BEAU-HAIR-185",
+    
     "name": "Modern Hair Care",
     "description": "High-quality hair care from LuxeCosmetics. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -7861,7 +7861,7 @@
     }
   },
   {
-    "sku": "BEAU-MAKE-186",
+    
     "name": "Super Makeup",
     "description": "High-quality makeup from LuxeCosmetics. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -7903,7 +7903,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-187",
+    
     "name": "Best Pantry Set",
     "description": "High-quality pantry from HealthyBites. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -7945,7 +7945,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-188",
+    
     "name": "Classic Accessorie Model",
     "description": "High-quality accessories from UrbanWear. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -7988,7 +7988,7 @@
     }
   },
   {
-    "sku": "ELEC-ACCE-189",
+    
     "name": "Classic Accessorie Collection",
     "description": "High-quality accessories from SmartTech. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -8031,7 +8031,7 @@
     }
   },
   {
-    "sku": "ELEC-TABL-190",
+    
     "name": "Deluxe Tablet Bundle",
     "description": "High-quality tablets from TechBrand. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -8074,7 +8074,7 @@
     }
   },
   {
-    "sku": "BOOK-SELF-191",
+    
     "name": "Elite Self-Help Model",
     "description": "High-quality self-help from Cambridge Press. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -8117,7 +8117,7 @@
     }
   },
   {
-    "sku": "CLOT-OUTE-192",
+    
     "name": "Pro Outerwear Set",
     "description": "High-quality outerwear from StyleHub. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -8159,7 +8159,7 @@
     }
   },
   {
-    "sku": "TOYS-ACTI-193",
+    
     "name": "Ultimate Action Figure Model",
     "description": "High-quality action figures from AdventurePlay. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -8202,7 +8202,7 @@
     }
   },
   {
-    "sku": "SPOR-WINT-194",
+    
     "name": "Modern Winter Sport",
     "description": "High-quality winter sports from OutdoorAdventure. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -8244,7 +8244,7 @@
     }
   },
   {
-    "sku": "ELEC-TABL-195",
+    
     "name": "Elite Tablet",
     "description": "High-quality tablets from PhotoMax. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -8287,7 +8287,7 @@
     }
   },
   {
-    "sku": "BOOK-BUSI-196",
+    
     "name": "Modern Busine Pack",
     "description": "High-quality business from McGraw-Hill. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -8330,7 +8330,7 @@
     }
   },
   {
-    "sku": "SPOR-FITN-197",
+    
     "name": "Ultra Fitne",
     "description": "High-quality fitness from AthleticGear. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -8373,7 +8373,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-198",
+    
     "name": "Super Decor",
     "description": "High-quality decor from StyleSpace. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -8416,7 +8416,7 @@
     }
   },
   {
-    "sku": "TOYS-PUZZ-199",
+    
     "name": "Pro Puzzle Kit",
     "description": "High-quality puzzles from AdventurePlay. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -8458,7 +8458,7 @@
     }
   },
   {
-    "sku": "SPOR-WATE-200",
+    
     "name": "Ultra Water Sport System",
     "description": "High-quality water sports from FitPro. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -8500,7 +8500,7 @@
     }
   },
   {
-    "sku": "BOOK-BUSI-201",
+    
     "name": "Advanced Busine",
     "description": "High-quality business from O'Reilly. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -8542,7 +8542,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-202",
+    
     "name": "Premium Specialty",
     "description": "High-quality specialty from GourmetFood. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -8584,7 +8584,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-203",
+    
     "name": "Essential Skincare Version",
     "description": "High-quality skincare from LuxeCosmetics. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -8626,7 +8626,7 @@
     }
   },
   {
-    "sku": "TOYS-ACTI-204",
+    
     "name": "Mega Action Figure Edition",
     "description": "High-quality action figures from PlayMax. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -8668,7 +8668,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-205",
+    
     "name": "Pro Decor",
     "description": "High-quality decor from ComfortPlus. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -8710,7 +8710,7 @@
     }
   },
   {
-    "sku": "FOOD-ORGA-206",
+    
     "name": "Deluxe Organic",
     "description": "High-quality organic from GourmetFood. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -8753,7 +8753,7 @@
     }
   },
   {
-    "sku": "FOOD-BEVE-207",
+    
     "name": "Mega Beverage Version",
     "description": "High-quality beverages from HealthyBites. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -8795,7 +8795,7 @@
     }
   },
   {
-    "sku": "BOOK-TECH-208",
+    
     "name": "Elite Technology",
     "description": "High-quality technology from Oxford. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -8838,7 +8838,7 @@
     }
   },
   {
-    "sku": "ELEC-GAMI-209",
+    
     "name": "Premium Gaming",
     "description": "High-quality gaming from FitWear. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -8880,7 +8880,7 @@
     }
   },
   {
-    "sku": "HOME-BEDR-210",
+    
     "name": "Classic Bedroom System",
     "description": "High-quality bedroom from ComfortPlus. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -8923,7 +8923,7 @@
     }
   },
   {
-    "sku": "BEAU-HAIR-211",
+    
     "name": "Premium Hair Care Kit",
     "description": "High-quality hair care from LuxeCosmetics. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -8966,7 +8966,7 @@
     }
   },
   {
-    "sku": "CLOT-T-SH-212",
+    
     "name": "Modern T-Shirt",
     "description": "High-quality t-shirts from OutdoorGear. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -9009,7 +9009,7 @@
     }
   },
   {
-    "sku": "SPOR-TEAM-213",
+    
     "name": "Premium Team Sport",
     "description": "High-quality team sports from FitPro. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -9052,7 +9052,7 @@
     }
   },
   {
-    "sku": "SPOR-WINT-214",
+    
     "name": "Professional Winter Sport Series",
     "description": "High-quality winter sports from SportMax. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -9095,7 +9095,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-215",
+    
     "name": "Best Specialty Series",
     "description": "High-quality specialty from GourmetFood. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -9137,7 +9137,7 @@
     }
   },
   {
-    "sku": "BOOK-TECH-216",
+    
     "name": "Ultra Technology Edition",
     "description": "High-quality technology from Oxford. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -9179,7 +9179,7 @@
     }
   },
   {
-    "sku": "TOYS-OUTD-217",
+    
     "name": "Deluxe Outdoor Toy Bundle",
     "description": "High-quality outdoor toys from LearnPlay. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -9222,7 +9222,7 @@
     }
   },
   {
-    "sku": "ELEC-MOBI-218",
+    
     "name": "Deluxe Mobile Phone Version",
     "description": "High-quality mobile phones from SoundPro. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -9265,7 +9265,7 @@
     }
   },
   {
-    "sku": "SPOR-CYCL-219",
+    
     "name": "Classic Cycling Model",
     "description": "High-quality cycling from ActiveLife. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -9307,7 +9307,7 @@
     }
   },
   {
-    "sku": "HOME-BEDR-220",
+    
     "name": "Ultra Bedroom",
     "description": "High-quality bedroom from StyleSpace. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -9350,7 +9350,7 @@
     }
   },
   {
-    "sku": "TOYS-BUIL-221",
+    
     "name": "Ultimate Building Set",
     "description": "High-quality building sets from LearnPlay. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -9392,7 +9392,7 @@
     }
   },
   {
-    "sku": "TOYS-BUIL-222",
+    
     "name": "Deluxe Building Set Model",
     "description": "High-quality building sets from PlayMax. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -9434,7 +9434,7 @@
     }
   },
   {
-    "sku": "FOOD-SNAC-223",
+    
     "name": "Pro Snack Model",
     "description": "High-quality snacks from OrganicFarms. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -9477,7 +9477,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-224",
+    
     "name": "Modern Decor",
     "description": "High-quality decor from HomeMax. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -9520,7 +9520,7 @@
     }
   },
   {
-    "sku": "ELEC-AUDI-225",
+    
     "name": "Premium Audio",
     "description": "High-quality audio from FitWear. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -9563,7 +9563,7 @@
     }
   },
   {
-    "sku": "HOME-LIVI-226",
+    
     "name": "Modern Living Room Set",
     "description": "High-quality living room from StyleSpace. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -9606,7 +9606,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-227",
+    
     "name": "Mega Fragrance",
     "description": "High-quality fragrances from LuxeCosmetics. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -9649,7 +9649,7 @@
     }
   },
   {
-    "sku": "FOOD-ORGA-228",
+    
     "name": "Mega Organic Bundle",
     "description": "High-quality organic from PureHarvest. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -9691,7 +9691,7 @@
     }
   },
   {
-    "sku": "TOYS-PUZZ-229",
+    
     "name": "Professional Puzzle Model",
     "description": "High-quality puzzles from FunToys. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -9733,7 +9733,7 @@
     }
   },
   {
-    "sku": "CLOT-SHOE-230",
+    
     "name": "Pro Shoe",
     "description": "High-quality shoes from DenimCo. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -9776,7 +9776,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-231",
+    
     "name": "Professional Accessorie",
     "description": "High-quality accessories from UrbanWear. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -9819,7 +9819,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-232",
+    
     "name": "Top Decor Bundle",
     "description": "High-quality decor from ModernLiving. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -9861,7 +9861,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-233",
+    
     "name": "Modern Decor Kit",
     "description": "High-quality decor from CozyHome. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -9904,7 +9904,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-234",
+    
     "name": "Super Skincare",
     "description": "High-quality skincare from LuxeCosmetics. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -9947,7 +9947,7 @@
     }
   },
   {
-    "sku": "HOME-LIVI-235",
+    
     "name": "Classic Living Room",
     "description": "High-quality living room from ComfortPlus. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -9989,7 +9989,7 @@
     }
   },
   {
-    "sku": "BOOK-SCIE-236",
+    
     "name": "Best Science Model",
     "description": "High-quality science from O'Reilly. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -10031,7 +10031,7 @@
     }
   },
   {
-    "sku": "ELEC-WEAR-237",
+    
     "name": "Ultimate Wearable",
     "description": "High-quality wearables from FitWear. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -10074,7 +10074,7 @@
     }
   },
   {
-    "sku": "BOOK-NON--238",
+    
     "name": "Ultra Non-Fiction Bundle",
     "description": "High-quality non-fiction from Penguin. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -10117,7 +10117,7 @@
     }
   },
   {
-    "sku": "SPOR-OUTD-239",
+    
     "name": "Top Outdoor Kit",
     "description": "High-quality outdoor from SportMax. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -10159,7 +10159,7 @@
     }
   },
   {
-    "sku": "ELEC-CAME-240",
+    
     "name": "Elite Camera",
     "description": "High-quality cameras from PhotoMax. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -10201,7 +10201,7 @@
     }
   },
   {
-    "sku": "FOOD-SNAC-241",
+    
     "name": "Advanced Snack Pack",
     "description": "High-quality snacks from HealthyBites. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -10244,7 +10244,7 @@
     }
   },
   {
-    "sku": "SPOR-TEAM-242",
+    
     "name": "Elite Team Sport",
     "description": "High-quality team sports from ActiveLife. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -10286,7 +10286,7 @@
     }
   },
   {
-    "sku": "HOME-BATH-243",
+    
     "name": "Classic Bathroom",
     "description": "High-quality bathroom from StyleSpace. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -10328,7 +10328,7 @@
     }
   },
   {
-    "sku": "FOOD-ORGA-244",
+    
     "name": "Elite Organic Edition",
     "description": "High-quality organic from NatureChoice. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -10371,7 +10371,7 @@
     }
   },
   {
-    "sku": "BEAU-TOOL-245",
+    
     "name": "Premium Tool",
     "description": "High-quality tools from PureBeauty. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -10414,7 +10414,7 @@
     }
   },
   {
-    "sku": "ELEC-GAMI-246",
+    
     "name": "Mega Gaming",
     "description": "High-quality gaming from ProGear. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -10456,7 +10456,7 @@
     }
   },
   {
-    "sku": "SPOR-FITN-247",
+    
     "name": "Ultimate Fitne",
     "description": "High-quality fitness from FitPro. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -10499,7 +10499,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-248",
+    
     "name": "Premium Decor",
     "description": "High-quality decor from CozyHome. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -10541,7 +10541,7 @@
     }
   },
   {
-    "sku": "HOME-LIVI-249",
+    
     "name": "Top Living Room Series",
     "description": "High-quality living room from StyleSpace. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -10584,7 +10584,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-250",
+    
     "name": "Premium Kitchen",
     "description": "High-quality kitchen from HomeMax. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -10627,7 +10627,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-251",
+    
     "name": "Classic Kitchen Version",
     "description": "High-quality kitchen from StyleSpace. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -10670,7 +10670,7 @@
     }
   },
   {
-    "sku": "SPOR-CYCL-252",
+    
     "name": "Classic Cycling",
     "description": "High-quality cycling from FitPro. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -10712,7 +10712,7 @@
     }
   },
   {
-    "sku": "CLOT-DRES-253",
+    
     "name": "Top Dresse Kit",
     "description": "High-quality dresses from UrbanWear. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -10755,7 +10755,7 @@
     }
   },
   {
-    "sku": "BOOK-TECH-254",
+    
     "name": "Modern Technology",
     "description": "High-quality technology from Cambridge Press. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -10798,7 +10798,7 @@
     }
   },
   {
-    "sku": "BOOK-EDUC-255",
+    
     "name": "Modern Education Series",
     "description": "High-quality education from Oxford. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -10841,7 +10841,7 @@
     }
   },
   {
-    "sku": "BEAU-HAIR-256",
+    
     "name": "Ultimate Hair Care Pack",
     "description": "High-quality hair care from GlowLab. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -10884,7 +10884,7 @@
     }
   },
   {
-    "sku": "BEAU-MAKE-257",
+    
     "name": "Ultimate Makeup System",
     "description": "High-quality makeup from PureBeauty. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -10926,7 +10926,7 @@
     }
   },
   {
-    "sku": "TOYS-OUTD-258",
+    
     "name": "Essential Outdoor Toy",
     "description": "High-quality outdoor toys from AdventurePlay. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -10968,7 +10968,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-259",
+    
     "name": "Mega Pantry Model",
     "description": "High-quality pantry from NatureChoice. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -11011,7 +11011,7 @@
     }
   },
   {
-    "sku": "FOOD-ORGA-260",
+    
     "name": "Elite Organic",
     "description": "High-quality organic from GourmetFood. Elite design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -11053,7 +11053,7 @@
     }
   },
   {
-    "sku": "SPOR-OUTD-261",
+    
     "name": "Professional Outdoor",
     "description": "High-quality outdoor from SportMax. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -11095,7 +11095,7 @@
     }
   },
   {
-    "sku": "TOYS-ACTI-262",
+    
     "name": "Professional Action Figure Model",
     "description": "High-quality action figures from CreativeKids. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -11138,7 +11138,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-263",
+    
     "name": "Essential Fragrance",
     "description": "High-quality fragrances from LuxeCosmetics. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -11181,7 +11181,7 @@
     }
   },
   {
-    "sku": "SPOR-WINT-264",
+    
     "name": "Essential Winter Sport Model",
     "description": "High-quality winter sports from FitPro. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -11224,7 +11224,7 @@
     }
   },
   {
-    "sku": "ELEC-WEAR-265",
+    
     "name": "Super Wearable Set",
     "description": "High-quality wearables from GameMax. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -11266,7 +11266,7 @@
     }
   },
   {
-    "sku": "ELEC-AUDI-266",
+    
     "name": "Classic Audio Collection",
     "description": "High-quality audio from MobileTech. Classic design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -11308,7 +11308,7 @@
     }
   },
   {
-    "sku": "BEAU-HAIR-267",
+    
     "name": "Top Hair Care",
     "description": "High-quality hair care from RadiantSkin. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -11351,7 +11351,7 @@
     }
   },
   {
-    "sku": "BEAU-FRAG-268",
+    
     "name": "Ultra Fragrance",
     "description": "High-quality fragrances from GlowLab. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -11394,7 +11394,7 @@
     }
   },
   {
-    "sku": "HOME-BATH-269",
+    
     "name": "Deluxe Bathroom Series",
     "description": "High-quality bathroom from ModernLiving. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -11436,7 +11436,7 @@
     }
   },
   {
-    "sku": "CLOT-PANT-270",
+    
     "name": "Ultra Pant",
     "description": "High-quality pants from UrbanWear. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -11478,7 +11478,7 @@
     }
   },
   {
-    "sku": "TOYS-PUZZ-271",
+    
     "name": "Premium Puzzle",
     "description": "High-quality puzzles from LearnPlay. Premium design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -11521,7 +11521,7 @@
     }
   },
   {
-    "sku": "CLOT-OUTE-272",
+    
     "name": "Advanced Outerwear",
     "description": "High-quality outerwear from StyleHub. Advanced design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -11564,7 +11564,7 @@
     }
   },
   {
-    "sku": "SPOR-FITN-273",
+    
     "name": "Best Fitne Series",
     "description": "High-quality fitness from SportMax. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -11607,7 +11607,7 @@
     }
   },
   {
-    "sku": "TOYS-OUTD-274",
+    
     "name": "Deluxe Outdoor Toy",
     "description": "High-quality outdoor toys from PlayMax. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -11649,7 +11649,7 @@
     }
   },
   {
-    "sku": "ELEC-WEAR-275",
+    
     "name": "Top Wearable",
     "description": "High-quality wearables from GameMax. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -11691,7 +11691,7 @@
     }
   },
   {
-    "sku": "ELEC-COMP-276",
+    
     "name": "Best Computer Kit",
     "description": "High-quality computers from FitWear. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -11734,7 +11734,7 @@
     }
   },
   {
-    "sku": "CLOT-ACCE-277",
+    
     "name": "Professional Accessorie Version",
     "description": "High-quality accessories from FashionFirst. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -11776,7 +11776,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-278",
+    
     "name": "Modern Pantry Set",
     "description": "High-quality pantry from NatureChoice. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -11818,7 +11818,7 @@
     }
   },
   {
-    "sku": "ELEC-TABL-279",
+    
     "name": "Essential Tablet",
     "description": "High-quality tablets from GameMax. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -11861,7 +11861,7 @@
     }
   },
   {
-    "sku": "BOOK-SCIE-280",
+    
     "name": "Modern Science",
     "description": "High-quality science from Penguin. Modern design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -11903,7 +11903,7 @@
     }
   },
   {
-    "sku": "BOOK-FICT-281",
+    
     "name": "Top Fiction",
     "description": "High-quality fiction from HarperCollins. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -11945,7 +11945,7 @@
     }
   },
   {
-    "sku": "CLOT-OUTE-282",
+    
     "name": "Ultimate Outerwear",
     "description": "High-quality outerwear from UrbanWear. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Clothing",
@@ -11987,7 +11987,7 @@
     }
   },
   {
-    "sku": "FOOD-SPEC-283",
+    
     "name": "Mega Specialty Collection",
     "description": "High-quality specialty from PureHarvest. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -12029,7 +12029,7 @@
     }
   },
   {
-    "sku": "ELEC-MOBI-284",
+    
     "name": "Mega Mobile Phone Set",
     "description": "High-quality mobile phones from GameMax. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -12071,7 +12071,7 @@
     }
   },
   {
-    "sku": "BOOK-SELF-285",
+    
     "name": "Pro Self-Help Collection",
     "description": "High-quality self-help from Penguin. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -12113,7 +12113,7 @@
     }
   },
   {
-    "sku": "SPOR-WATE-286",
+    
     "name": "Ultimate Water Sport",
     "description": "High-quality water sports from FitPro. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -12156,7 +12156,7 @@
     }
   },
   {
-    "sku": "SPOR-FITN-287",
+    
     "name": "Ultra Fitne",
     "description": "High-quality fitness from SportMax. Ultra design with excellent features and durability. Perfect for everyday use.",
     "category": "Sports",
@@ -12199,7 +12199,7 @@
     }
   },
   {
-    "sku": "BOOK-BUSI-288",
+    
     "name": "Pro Busine",
     "description": "High-quality business from O'Reilly. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -12241,7 +12241,7 @@
     }
   },
   {
-    "sku": "TOYS-BUIL-289",
+    
     "name": "Mega Building Set",
     "description": "High-quality building sets from LearnPlay. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Toys",
@@ -12284,7 +12284,7 @@
     }
   },
   {
-    "sku": "ELEC-CAME-290",
+    
     "name": "Ultimate Camera Edition",
     "description": "High-quality cameras from SoundPro. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Electronics",
@@ -12327,7 +12327,7 @@
     }
   },
   {
-    "sku": "BEAU-MAKE-291",
+    
     "name": "Mega Makeup",
     "description": "High-quality makeup from GlowLab. Mega design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -12370,7 +12370,7 @@
     }
   },
   {
-    "sku": "BOOK-TECH-292",
+    
     "name": "Professional Technology",
     "description": "High-quality technology from Oxford. Professional design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -12412,7 +12412,7 @@
     }
   },
   {
-    "sku": "HOME-KITC-293",
+    
     "name": "Super Kitchen Collection",
     "description": "High-quality kitchen from CozyHome. Super design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -12454,7 +12454,7 @@
     }
   },
   {
-    "sku": "HOME-BATH-294",
+    
     "name": "Top Bathroom Pack",
     "description": "High-quality bathroom from CozyHome. Top design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
@@ -12497,7 +12497,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-295",
+    
     "name": "Essential Pantry",
     "description": "High-quality pantry from HealthyBites. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -12540,7 +12540,7 @@
     }
   },
   {
-    "sku": "FOOD-BEVE-296",
+    
     "name": "Pro Beverage",
     "description": "High-quality beverages from PureHarvest. Pro design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -12583,7 +12583,7 @@
     }
   },
   {
-    "sku": "BEAU-SKIN-297",
+    
     "name": "Essential Skincare",
     "description": "High-quality skincare from RadiantSkin. Essential design with excellent features and durability. Perfect for everyday use.",
     "category": "Beauty",
@@ -12625,7 +12625,7 @@
     }
   },
   {
-    "sku": "BOOK-NON--298",
+    
     "name": "Ultimate Non-Fiction",
     "description": "High-quality non-fiction from Oxford. Ultimate design with excellent features and durability. Perfect for everyday use.",
     "category": "Books",
@@ -12668,7 +12668,7 @@
     }
   },
   {
-    "sku": "FOOD-PANT-299",
+    
     "name": "Best Pantry",
     "description": "High-quality pantry from PureHarvest. Best design with excellent features and durability. Perfect for everyday use.",
     "category": "Food",
@@ -12711,7 +12711,7 @@
     }
   },
   {
-    "sku": "HOME-DECO-300",
+    
     "name": "Deluxe Decor",
     "description": "High-quality decor from ModernLiving. Deluxe design with excellent features and durability. Perfect for everyday use.",
     "category": "Home",
