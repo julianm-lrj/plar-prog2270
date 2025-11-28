@@ -1,6 +1,7 @@
 package router
 
 import (
+	"os"
 	"time"
 
 	"github.com/gin-contrib/cors"
@@ -11,6 +12,11 @@ var Router *gin.Engine
 
 func InitEngine() {
 	Router = gin.Default()
+	if os.Getenv("ENV") == "production" {
+		gin.SetMode(gin.ReleaseMode)
+	} else {
+		gin.SetMode(gin.DebugMode)
+	}
 
 	Router.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"http://localhost:3000", "http://localhost:5173", "https://plar-conestoga-prog2270.julianmorley.ca"},
