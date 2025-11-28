@@ -46,7 +46,60 @@ func (p *Product) CalculateTotalStock() {
 	p.Stock.Total = p.Stock.WarehouseMain + p.Stock.WarehouseEast + p.Stock.WarehouseWest
 }
 
-// IsInStock checks if product has available inventory
+type CreateProductRequest struct {
+	Name        string            `json:"name" validate:"required,min=2,max=200"`
+	Description string            `json:"description" validate:"max=2000"`
+	Category    string            `json:"category" validate:"required,min=2,max=100"`
+	Subcategory string            `json:"subcategory" validate:"max=100"`
+	Brand       string            `json:"brand" validate:"required,min=2,max=100"`
+	Price       float64           `json:"price" validate:"required,gt=0"`
+	Currency    string            `json:"currency" validate:"required,len=3"`
+	Images      []string          `json:"images" validate:"dive,url"`
+	Attributes  map[string]string `json:"attributes"`
+	Tags        []string          `json:"tags" validate:"dive,min=2,max=50"`
+}
+
+func (req *CreateProductRequest) GenerateSKU() string {
+	brandPrefix := strings.ToUpper(req.Brand[:min(3, len(req.Brand))])
+	categoryPrefix := strings.ToUpper(req.Category[:min(3, len(req.Category))])
+	timestamp := time.Now().Unix()
+	return fmt.Sprintf("%s-%s-%d", brandPrefix, categoryPrefix, timestamp)
+}
+
+func (req *CreateProductRequest) ToProduct() *Product {
+	now := time.Now()
+	product := &Product{
+		ID:          bson.NewObjectID(),
+		SKU:         req.GenerateSKU(),
+		Name:        req.Name,
+		Description: req.Description,
+		Category:    req.Category,
+		Subcategory: req.Subcategory,
+		Brand:       req.Brand,
+		Price:       req.Price,
+		Currency:    req.Currency,
+		Stock:       Stock{WarehouseMain: 0, WarehouseEast: 0, WarehouseWest: 0, Total: 0},
+		Attributes:  req.Attributes,
+		Images:      req.Images,
+		Ratings:     Ratings{Average: 0.0, Count: 0},
+		Tags:        req.Tags,
+		Status:      "active",
+		CreatedAt:   now,
+		UpdatedAt:   now,
+	}
+	if product.Attributes == nil {
+		product.Attributes = make(map[string]string)
+	}
+	return product
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
 func (p *Product) IsInStock() bool {
 	return p.Stock.Total > 0 && p.Status == "active"
 }

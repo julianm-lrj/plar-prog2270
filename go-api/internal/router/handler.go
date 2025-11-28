@@ -31,6 +31,40 @@ func GetAllProducts(c *gin.Context) {
 	c.JSON(http.StatusOK, global.SuccessResponse(products))
 }
 
+func CreateNewProducts(c *gin.Context) {
+	var req []models.CreateProductRequest
+
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("Invalid request data", []global.ValidationError{
+			{Field: "request", Message: err.Error(), Code: "validation_error"},
+		}))
+		return
+	}
+
+	if len(req) == 0 {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("No products provided", []global.ValidationError{
+			{Field: "products", Message: "At least one product is required", Code: "empty_array"},
+		}))
+		return
+	}
+
+	products := make([]*models.Product, len(req))
+	for i, productReq := range req {
+		products[i] = productReq.ToProduct()
+	}
+
+	createdProducts, err := mongo.CreateProducts(c.Request.Context(), products)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, global.ErrorResponse("Failed to create products", nil))
+		return
+	}
+
+	c.JSON(http.StatusCreated, global.SuccessResponse(map[string]interface{}{
+		"products": createdProducts,
+		"count":    len(createdProducts),
+	}))
+}
+
 func GetAllOrders(c *gin.Context) {}
 
 func GetAllCustomers(c *gin.Context) {}
