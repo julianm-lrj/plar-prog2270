@@ -31,6 +31,175 @@ func GetAllProducts(c *gin.Context) {
 	c.JSON(http.StatusOK, global.SuccessResponse(products))
 }
 
+// GetProductBySKU retrieves a product by SKU with Redis caching
+func GetProductBySKU(c *gin.Context) {
+	sku := c.Param("sku") // Parameter is named 'sku'
+
+	// Validate SKU format (basic validation)
+	if len(sku) < 3 || len(sku) > 50 {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("Invalid SKU format", []global.ValidationError{
+			{Field: "sku", Message: "SKU must be between 3 and 50 characters", Code: "invalid_format"},
+		}))
+		return
+	}
+
+	ctx := c.Request.Context()
+
+	// Try Redis cache first using SKU
+	product, err := redis.GetProductBySKUFromCache(ctx, sku)
+	if err == nil {
+		// Found in cache, return immediately
+		c.Header("X-Cache", "HIT")
+		c.JSON(http.StatusOK, global.SuccessResponse(product))
+		return
+	}
+
+	// Cache miss, check MongoDB by SKU
+	product, err = mongo.GetProductBySKU(ctx, sku)
+	if err != nil {
+		// Check if it's a "not found" error
+		if err.Error() == "mongo: no documents in result" {
+			c.JSON(http.StatusNotFound, global.ErrorResponse("Product not found", []global.ValidationError{
+				{Field: "sku", Message: "No product exists with this SKU", Code: "not_found"},
+			}))
+			return
+		}
+		// Other database error
+		log.Printf("Error fetching product from MongoDB: %v", err)
+		c.JSON(http.StatusInternalServerError, global.ErrorResponse("Failed to fetch product", nil))
+		return
+	}
+
+	// Found in MongoDB, cache it for future requests
+	if cacheErr := redis.CacheSingleProduct(ctx, product); cacheErr != nil {
+		// Log cache error but don't fail the request
+		log.Printf("Warning: Failed to cache product in Redis: %v", cacheErr)
+	}
+
+	// Return product with cache miss indicator
+	c.Header("X-Cache", "MISS")
+	c.JSON(http.StatusOK, global.SuccessResponse(product))
+}
+
+// EditProductBySKU updates specific fields of a product by SKU
+func EditProductBySKU(c *gin.Context) {
+	sku := c.Param("sku")
+
+	// Validate SKU format
+	if len(sku) < 3 || len(sku) > 50 {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("Invalid SKU format", []global.ValidationError{
+			{Field: "sku", Message: "SKU must be between 3 and 50 characters", Code: "invalid_format"},
+		}))
+		return
+	}
+
+	ctx := c.Request.Context()
+
+	// Parse JSON body into a map for partial updates
+	var updates map[string]interface{}
+	if err := c.ShouldBindJSON(&updates); err != nil {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("Invalid JSON format", []global.ValidationError{
+			{Field: "body", Message: err.Error(), Code: "json_parse_error"},
+		}))
+		return
+	}
+
+	// Validate that we have updates to apply
+	if len(updates) == 0 {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("No updates provided", []global.ValidationError{
+			{Field: "body", Message: "Request body must contain at least one field to update", Code: "empty_updates"},
+		}))
+		return
+	}
+
+	// Prevent updating immutable fields - remove them from updates instead of erroring
+	immutableFields := []string{"_id", "id", "sku", "created_at"}
+	for _, field := range immutableFields {
+		if _, exists := updates[field]; exists {
+			delete(updates, field)
+			log.Printf("Warning: Removed immutable field '%s' from update request", field)
+		}
+	}
+
+	// Check if we still have updates after removing immutable fields
+	if len(updates) == 0 {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("No valid updates provided", []global.ValidationError{
+			{Field: "body", Message: "All provided fields are immutable and cannot be updated", Code: "no_valid_updates"},
+		}))
+		return
+	}
+
+	// Update the product in MongoDB
+	updatedProduct, err := mongo.UpdateProductBySKU(ctx, sku, updates)
+	if err != nil {
+		// Check if it's a "not found" error
+		if err.Error() == "mongo: no documents in result" {
+			c.JSON(http.StatusNotFound, global.ErrorResponse("Product not found", []global.ValidationError{
+				{Field: "sku", Message: "No product exists with this SKU", Code: "not_found"},
+			}))
+			return
+		}
+		// Other database error
+		log.Printf("Error updating product in MongoDB: %v", err)
+		c.JSON(http.StatusInternalServerError, global.ErrorResponse("Failed to update product", nil))
+		return
+	}
+
+	// Update the entire document in Redis cache
+	if cacheErr := redis.CacheSingleProduct(ctx, updatedProduct); cacheErr != nil {
+		// Log cache error but don't fail the request since DB update succeeded
+		log.Printf("Warning: Failed to update product cache in Redis: %v", cacheErr)
+	}
+
+	// Return the updated product
+	c.Header("X-Cache", "REFRESHED")
+	c.JSON(http.StatusOK, global.SuccessResponse(updatedProduct))
+}
+
+// DeleteProductBySKU deletes a product by SKU from both database and cache
+func DeleteProductBySKU(c *gin.Context) {
+	sku := c.Param("sku")
+
+	// Validate SKU format
+	if len(sku) < 3 || len(sku) > 50 {
+		c.JSON(http.StatusBadRequest, global.ErrorResponse("Invalid SKU format", []global.ValidationError{
+			{Field: "sku", Message: "SKU must be between 3 and 50 characters", Code: "invalid_format"},
+		}))
+		return
+	}
+
+	ctx := c.Request.Context()
+
+	// Delete the product from MongoDB (this also returns the deleted product for cache cleanup)
+	deletedProduct, err := mongo.DeleteProductBySKU(ctx, sku)
+	if err != nil {
+		// Check if it's a "not found" error
+		if err.Error() == "mongo: no documents in result" {
+			c.JSON(http.StatusNotFound, global.ErrorResponse("Product not found", []global.ValidationError{
+				{Field: "sku", Message: "No product exists with this SKU", Code: "not_found"},
+			}))
+			return
+		}
+		// Other database error
+		log.Printf("Error deleting product from MongoDB: %v", err)
+		c.JSON(http.StatusInternalServerError, global.ErrorResponse("Failed to delete product", nil))
+		return
+	}
+
+	// Remove from Redis cache
+	if cacheErr := redis.RemoveProductFromCache(ctx, deletedProduct); cacheErr != nil {
+		// Log cache error but don't fail the request since DB deletion succeeded
+		log.Printf("Warning: Failed to remove product from Redis cache: %v", cacheErr)
+	}
+
+	// Return success with the deleted product info
+	c.Header("X-Cache", "DELETED")
+	c.JSON(http.StatusOK, global.SuccessResponse(map[string]interface{}{
+		"deleted_product": deletedProduct,
+		"message":         "Product successfully deleted",
+	}))
+}
+
 func CreateNewProducts(c *gin.Context) {
 	var req []models.CreateProductRequest
 
@@ -57,6 +226,12 @@ func CreateNewProducts(c *gin.Context) {
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, global.ErrorResponse("Failed to create products", nil))
 		return
+	}
+
+	if err := redis.AddProductsToCache(c.Request.Context(), createdProducts); err != nil {
+		// Log the error but don't fail the request since MongoDB succeeded
+		// In production, you might want to use a proper logger here
+		log.Printf("Warning: Failed to cache products in Redis: %v", err)
 	}
 
 	c.JSON(http.StatusCreated, global.SuccessResponse(map[string]interface{}{
