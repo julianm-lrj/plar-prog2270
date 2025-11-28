@@ -1,6 +1,8 @@
 package models
 
 import (
+	"fmt"
+	"strings"
 	"time"
 
 	"go.mongodb.org/mongo-driver/v2/bson"
@@ -41,7 +43,6 @@ type Product struct {
 	UpdatedAt   time.Time         `json:"updated_at" bson:"updated_at"`
 }
 
-// CalculateTotalStock updates the total stock from warehouse values
 func (p *Product) CalculateTotalStock() {
 	p.Stock.Total = p.Stock.WarehouseMain + p.Stock.WarehouseEast + p.Stock.WarehouseWest
 }
@@ -104,12 +105,10 @@ func (p *Product) IsInStock() bool {
 	return p.Stock.Total > 0 && p.Status == "active"
 }
 
-// IsLowStock checks if product inventory is below threshold
 func (p *Product) IsLowStock(threshold int) bool {
 	return p.Stock.Total <= threshold && p.Stock.Total > 0
 }
 
-// SetTimestamps sets created_at and updated_at for new products
 func (p *Product) SetTimestamps() {
 	now := time.Now()
 	if p.CreatedAt.IsZero() {

@@ -33,25 +33,25 @@ func GetAllProducts() ([]bson.M, error) {
 
 func CreateProducts(ctx context.Context, products []*models.Product) ([]*models.Product, error) {
 	collection := GetCollection("products")
-	
+
 	// Convert to interface slice for InsertMany
 	docs := make([]interface{}, len(products))
 	for i, product := range products {
 		docs[i] = product
 	}
-	
+
 	result, err := collection.InsertMany(ctx, docs)
 	if err != nil {
 		return nil, err
 	}
-	
+
 	// Update the products with their inserted IDs
 	for i, insertedID := range result.InsertedIDs {
 		if objectID, ok := insertedID.(bson.ObjectID); ok {
 			products[i].ID = objectID
 		}
 	}
-	
+
 	return products, nil
 }
 
