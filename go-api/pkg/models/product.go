@@ -1,7 +1,9 @@
 package models
 
 import (
+	"crypto/rand"
 	"fmt"
+	"strconv"
 	"strings"
 	"time"
 
@@ -63,8 +65,21 @@ type CreateProductRequest struct {
 func (req *CreateProductRequest) GenerateSKU() string {
 	brandPrefix := strings.ToUpper(req.Brand[:min(3, len(req.Brand))])
 	categoryPrefix := strings.ToUpper(req.Category[:min(3, len(req.Category))])
-	timestamp := time.Now().Unix()
-	return fmt.Sprintf("%s-%s-%d", brandPrefix, categoryPrefix, timestamp)
+
+	// Use nanoseconds for higher precision
+	now := time.Now()
+	nanoTime := now.UnixNano()
+
+	// Convert nanoseconds to hex for shorter representation
+	timeHex := strconv.FormatInt(nanoTime, 16)
+
+	// Add random bytes for extra uniqueness
+	randomBytes := make([]byte, 2)
+	rand.Read(randomBytes)
+	randomHex := fmt.Sprintf("%x", randomBytes)
+
+	// Format: BRAND-CATEGORY-TIMESTAMP_HEX-RANDOM_HEX
+	return fmt.Sprintf("%s-%s-%s%s", brandPrefix, categoryPrefix, timeHex, randomHex)
 }
 
 func (req *CreateProductRequest) ToProduct() *Product {
