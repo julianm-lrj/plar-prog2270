@@ -10,13 +10,11 @@ import (
 var Router *gin.Engine
 
 func InitEngine() {
-	// Initialize Gin engine with default middleware (Logger + Recovery)
 	Router = gin.Default()
 
-	// Configure CORS middleware
 	Router.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"http://localhost:3000", "http://localhost:5173", "https://plar-conestoga-prog2270.julianmorley.ca"},
-		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"},
+		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization", "X-Requested-With"},
 		ExposeHeaders:    []string{"Content-Length", "X-Total-Count"},
 		AllowCredentials: true,
