@@ -10,7 +10,7 @@
 services:
   server:
     build:
-      context: .
+      context: go-api/.
       target: final
     ports:
       - 8000:8000

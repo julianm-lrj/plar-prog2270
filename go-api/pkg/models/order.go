@@ -1,10 +1,21 @@
 package models
 
 import (
+	"fmt"
 	"time"
 
 	"go.mongodb.org/mongo-driver/v2/bson"
 )
+
+type CreateOrderRequest struct {
+	CustomerID      bson.ObjectID `json:"customer_id" bson:"customer_id" validate:"required"`
+	CustomerEmail   string        `json:"customer_email" bson:"customer_email" validate:"required,email"`
+	Items           []OrderItem   `json:"items" bson:"items" validate:"required,min=1,dive"`
+	ShippingAddress Address       `json:"shipping_address" bson:"shipping_address" validate:"required"`
+	BillingAddress  *Address      `json:"billing_address" bson:"billing_address,omitempty"`
+	Payment         Payment       `json:"payment" bson:"payment" validate:"required"`
+	Notes           string        `json:"notes" bson:"notes,omitempty"`
+}
 
 // OrderItem represents a single item in an order
 type OrderItem struct {
@@ -166,4 +177,13 @@ func (o *Order) HasBeenPaid() bool {
 // CanBeCancelled checks if the order can still be cancelled
 func (o *Order) CanBeCancelled() bool {
 	return o.Status == "pending" || o.Status == "processing"
+}
+
+func GenerateOrderNumber() string {
+	now := time.Now()
+	// Format: ORD-YYYYMMDD-HHMMSS-RAND
+	return fmt.Sprintf("ORD-%s-%03d",
+		now.Format("20060102-150405"),
+		now.Nanosecond()%1000,
+	)
 }

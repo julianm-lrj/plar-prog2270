@@ -1,0 +1,87 @@
+[
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789050"},
+    "session_id": "sess_mobile_123456",
+    "cart_id": {"$oid": "674685a1b2c3d4e5f6789040"},
+    "product_sku": "FURN-CHAIR-001",
+    "product_name": "Ergonomic Office Chair",
+    "price": 349.99,
+    "quantity": 1,
+    "subtotal": 349.99,
+    "added_at": {"$date": "2025-11-25T14:30:00.000Z"},
+    "last_updated": {"$date": "2025-11-25T14:30:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789051"},
+    "session_id": "sess_mobile_123456",
+    "cart_id": {"$oid": "674685a1b2c3d4e5f6789040"},
+    "product_sku": "ELEC-MOUSE-005",
+    "product_name": "Wireless Mouse",
+    "price": 29.99,
+    "quantity": 2,
+    "subtotal": 59.98,
+    "added_at": {"$date": "2025-11-25T15:15:00.000Z"},
+    "last_updated": {"$date": "2025-11-25T15:45:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789052"},
+    "session_id": "sess_mobile_123456",
+    "cart_id": {"$oid": "674685a1b2c3d4e5f6789040"},
+    "product_sku": "SUPPLY-PEN-001",
+    "product_name": "Premium Pen Set",
+    "price": 15.99,
+    "quantity": 1,
+    "subtotal": 15.99,
+    "added_at": {"$date": "2025-11-25T15:30:00.000Z"},
+    "last_updated": {"$date": "2025-11-25T15:30:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789053"},
+    "session_id": "sess_web_789012",
+    "cart_id": {"$oid": "674685a1b2c3d4e5f6789041"},
+    "product_sku": "BOOK-FICTION-101",
+    "product_name": "The Mystery Novel",
+    "price": 24.99,
+    "quantity": 1,
+    "subtotal": 24.99,
+    "added_at": {"$date": "2025-11-25T09:15:00.000Z"},
+    "last_updated": {"$date": "2025-11-25T09:15:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789054"},
+    "session_id": "sess_web_789012",
+    "cart_id": {"$oid": "674685a1b2c3d4e5f6789041"},
+    "product_sku": "BOOK-TEXTBOOK-001",
+    "product_name": "Advanced Mathematics",
+    "price": 89.99,
+    "quantity": 1,
+    "subtotal": 89.99,
+    "added_at": {"$date": "2025-11-25T16:20:00.000Z"},
+    "last_updated": {"$date": "2025-11-25T16:20:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789055"},
+    "session_id": "sess_web_345678",
+    "cart_id": {"$oid": "674685a1b2c3d4e5f6789042"},
+    "product_sku": "HOME-COFFEE-001",
+    "product_name": "Premium Coffee Maker",
+    "price": 199.99,
+    "quantity": 1,
+    "subtotal": 199.99,
+    "added_at": {"$date": "2025-11-25T11:00:00.000Z"},
+    "last_updated": {"$date": "2025-11-25T11:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789056"},
+    "session_id": "sess_web_456789",
+    "cart_id": null,
+    "product_sku": "ELEC-KEYB-008",
+    "product_name": "Mechanical Keyboard",
+    "price": 149.99,
+    "quantity": 1,
+    "subtotal": 149.99,
+    "added_at": {"$date": "2025-11-25T12:00:00.000Z"},
+    "last_updated": {"$date": "2025-11-25T12:00:00.000Z"},
+    "status": "abandoned"
+  }
+]

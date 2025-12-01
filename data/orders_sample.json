@@ -1,0 +1,193 @@
+[
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789def"},
+    "order_number": "ORD-2025-11-001234",
+    "customer_id": {"$oid": "674685a1b2c3d4e5f6789abc"},
+    "customer_email": "sarah.johnson@example.com",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789012"},
+        "sku": "ELEC-LAPTOP-001",
+        "name": "High-Performance Laptop",
+        "quantity": 1,
+        "unit_price": 1299.99,
+        "subtotal": 1299.99
+      },
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789013"},
+        "sku": "ELEC-MOUSE-005",
+        "name": "Wireless Mouse",
+        "quantity": 1,
+        "unit_price": 29.99,
+        "subtotal": 29.99
+      }
+    ],
+    "totals": {
+      "subtotal": 1329.98,
+      "tax": 172.90,
+      "shipping": 0.00,
+      "discount": 50.00,
+      "grand_total": 1452.88
+    },
+    "shipping_address": {
+      "street": "123 Queen Street West",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5H 2M5",
+      "country": "Canada"
+    },
+    "billing_address": {
+      "street": "123 Queen Street West", 
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5H 2M5",
+      "country": "Canada"
+    },
+    "payment": {
+      "method": "credit_card",
+      "status": "completed",
+      "transaction_id": "txn_2025110012345",
+      "last_four": "4242",
+      "card_brand": "visa"
+    },
+    "notes": "Customer requested express delivery. Laptop for work purposes.",
+    "timeline": {
+      "ordered_at": {"$date": "2025-11-15T10:30:00.000Z"},
+      "confirmed_at": {"$date": "2025-11-15T10:31:00.000Z"},
+      "shipped_at": {"$date": "2025-11-16T14:20:00.000Z"},
+      "delivered_at": {"$date": "2025-11-18T11:45:00.000Z"}
+    },
+    "shipping": {
+      "carrier": "Canada Post",
+      "tracking_number": "1Z999AA1234567890",
+      "service_type": "Express",
+      "estimated_delivery": {"$date": "2025-11-18T23:59:59.000Z"}
+    },
+    "created_at": {"$date": "2025-11-15T10:30:00.000Z"},
+    "updated_at": {"$date": "2025-11-18T11:45:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789e00"},
+    "order_number": "ORD-2025-11-001235",
+    "customer_id": {"$oid": "674685a1b2c3d4e5f6789abd"},
+    "customer_email": "mike.chen@email.com",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789020"},
+        "sku": "BOOK-FICTION-101",
+        "name": "The Mystery Novel",
+        "quantity": 2,
+        "unit_price": 24.99,
+        "subtotal": 49.98
+      },
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789021"},
+        "sku": "HOME-COFFEE-001",
+        "name": "Premium Coffee Maker",
+        "quantity": 1,
+        "unit_price": 189.99,
+        "subtotal": 189.99
+      }
+    ],
+    "totals": {
+      "subtotal": 239.97,
+      "tax": 31.20,
+      "shipping": 15.00,
+      "discount": 0.00,
+      "grand_total": 286.17
+    },
+    "shipping_address": {
+      "street": "789 Bay Street, Unit 1205",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5G 1M5",
+      "country": "Canada"
+    },
+    "billing_address": {
+      "street": "789 Bay Street, Unit 1205",
+      "city": "Toronto",
+      "province": "ON", 
+      "postal_code": "M5G 1M5",
+      "country": "Canada"
+    },
+    "payment": {
+      "method": "paypal",
+      "status": "completed",
+      "transaction_id": "pp_2025110012346",
+      "paypal_email": "mike.chen@email.com"
+    },
+    "notes": "",
+    "timeline": {
+      "ordered_at": {"$date": "2025-11-20T14:15:00.000Z"},
+      "confirmed_at": {"$date": "2025-11-20T14:16:00.000Z"},
+      "shipped_at": {"$date": "2025-11-21T09:30:00.000Z"}
+    },
+    "shipping": {
+      "carrier": "UPS",
+      "tracking_number": "1Z999BB7890123456",
+      "service_type": "Ground",
+      "estimated_delivery": {"$date": "2025-11-24T17:00:00.000Z"}
+    },
+    "created_at": {"$date": "2025-11-20T14:15:00.000Z"},
+    "updated_at": {"$date": "2025-11-21T09:30:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789e01"},
+    "order_number": "ORD-2025-11-001236", 
+    "customer_id": {"$oid": "674685a1b2c3d4e5f6789abe"},
+    "customer_email": "emma.wilson@company.org",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789025"},
+        "sku": "FURN-CHAIR-001",
+        "name": "Ergonomic Office Chair",
+        "quantity": 1,
+        "unit_price": 349.99,
+        "subtotal": 349.99
+      }
+    ],
+    "totals": {
+      "subtotal": 349.99,
+      "tax": 45.50,
+      "shipping": 25.00,
+      "discount": 35.00,
+      "grand_total": 385.49
+    },
+    "shipping_address": {
+      "street": "555 University Avenue, Floor 12",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5G 1X8",
+      "country": "Canada"
+    },
+    "billing_address": {
+      "street": "555 University Avenue, Floor 12",
+      "city": "Toronto", 
+      "province": "ON",
+      "postal_code": "M5G 1X8",
+      "country": "Canada"
+    },
+    "payment": {
+      "method": "credit_card",
+      "status": "pending",
+      "transaction_id": null,
+      "last_four": "8765",
+      "card_brand": "mastercard"
+    },
+    "notes": "Office furniture for new employee setup.",
+    "timeline": {
+      "ordered_at": {"$date": "2025-11-25T16:45:00.000Z"}
+    },
+    "shipping": {
+      "carrier": "FedEx",
+      "tracking_number": null,
+      "service_type": "Standard",
+      "estimated_delivery": {"$date": "2025-11-30T17:00:00.000Z"}
+    },
+    "created_at": {"$date": "2025-11-25T16:45:00.000Z"},
+    "updated_at": {"$date": "2025-11-25T16:45:00.000Z"}
+  }
+]

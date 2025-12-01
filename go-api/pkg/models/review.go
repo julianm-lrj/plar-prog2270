@@ -58,3 +58,21 @@ func (r *Review) IsNegative() bool {
 func (r *Review) IsVerified() bool {
 	return r.VerifiedPurchase
 }
+
+// CreateReviewRequest represents the request payload for creating a new review
+type CreateReviewRequest struct {
+	ProductID        bson.ObjectID `json:"product_id" bson:"product_id" validate:"required"`
+	CustomerID       bson.ObjectID `json:"customer_id" bson:"customer_id" validate:"required"`
+	OrderID          bson.ObjectID `json:"order_id" bson:"order_id,omitempty"`
+	Rating           int           `json:"rating" bson:"rating" validate:"required,gte=1,lte=5"`
+	Title            string        `json:"title" bson:"title" validate:"required,min=2,max=200"`
+	Comment          string        `json:"comment" bson:"comment" validate:"max=2000"`
+	VerifiedPurchase bool          `json:"verified_purchase" bson:"verified_purchase"`
+}
+
+// UpdateReviewRequest represents the request payload for updating an existing review
+type UpdateReviewRequest struct {
+	Rating  *int    `json:"rating" bson:"rating,omitempty" validate:"omitempty,gte=1,lte=5"`
+	Title   *string `json:"title" bson:"title,omitempty" validate:"omitempty,min=2,max=200"`
+	Comment *string `json:"comment" bson:"comment,omitempty" validate:"omitempty,max=2000"`
+}

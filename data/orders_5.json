@@ -1,0 +1,336 @@
+[
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789def"},
+    "order_number": "ORD-2025-11-001234",
+    "customer_id": {"$oid": "674685a1b2c3d4e5f6789abc"},
+    "customer_email": "sarah.johnson@example.com",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789012"},
+        "sku": "ELEC-LAPTOP-001",
+        "name": "High-Performance Laptop",
+        "quantity": 1,
+        "unit_price": 1299.99,
+        "subtotal": 1299.99
+      },
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789013"},
+        "sku": "ELEC-MOUSE-005",
+        "name": "Wireless Mouse",
+        "quantity": 1,
+        "unit_price": 29.99,
+        "subtotal": 29.99
+      }
+    ],
+    "totals": {
+      "subtotal": 1329.98,
+      "tax": 172.90,
+      "shipping": 0.00,
+      "discount": 50.00,
+      "grand_total": 1452.88
+    },
+    "shipping_address": {
+      "street": "123 Queen Street West",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5H 2M5",
+      "country": "Canada"
+    },
+    "billing_address": {
+      "street": "123 Queen Street West", 
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5H 2M5",
+      "country": "Canada"
+    },
+    "payment": {
+      "method": "credit_card",
+      "status": "completed",
+      "transaction_id": "txn_2025110012345",
+      "last_four": "4242",
+      "card_brand": "visa"
+    },
+    "notes": "Customer requested express delivery. Laptop for work purposes.",
+    "timeline": {
+      "ordered_at": {"$date": "2025-11-15T10:30:00.000Z"},
+      "confirmed_at": {"$date": "2025-11-15T10:31:00.000Z"},
+      "shipped_at": {"$date": "2025-11-16T14:20:00.000Z"},
+      "delivered_at": {"$date": "2025-11-18T11:45:00.000Z"}
+    },
+    "shipping": {
+      "carrier": "Canada Post",
+      "tracking_number": "1Z999AA1234567890",
+      "service_type": "Express",
+      "estimated_delivery": {"$date": "2025-11-18T23:59:59.000Z"}
+    },
+    "created_at": {"$date": "2025-11-15T10:30:00.000Z"},
+    "updated_at": {"$date": "2025-11-18T11:45:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789e00"},
+    "order_number": "ORD-2025-11-001235",
+    "customer_id": {"$oid": "674685a1b2c3d4e5f6789abd"},
+    "customer_email": "mike.chen@email.com",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789020"},
+        "sku": "BOOK-FICTION-101",
+        "name": "The Mystery Novel",
+        "quantity": 2,
+        "unit_price": 24.99,
+        "subtotal": 49.98
+      },
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789021"},
+        "sku": "HOME-COFFEE-001",
+        "name": "Premium Coffee Maker",
+        "quantity": 1,
+        "unit_price": 189.99,
+        "subtotal": 189.99
+      }
+    ],
+    "totals": {
+      "subtotal": 239.97,
+      "tax": 31.20,
+      "shipping": 15.00,
+      "discount": 0.00,
+      "grand_total": 286.17
+    },
+    "shipping_address": {
+      "street": "789 Bay Street, Unit 1205",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5G 1M5",
+      "country": "Canada"
+    },
+    "billing_address": {
+      "street": "789 Bay Street, Unit 1205",
+      "city": "Toronto",
+      "province": "ON", 
+      "postal_code": "M5G 1M5",
+      "country": "Canada"
+    },
+    "payment": {
+      "method": "paypal",
+      "status": "completed",
+      "transaction_id": "pp_2025110012346",
+      "paypal_email": "mike.chen@email.com"
+    },
+    "notes": "",
+    "timeline": {
+      "ordered_at": {"$date": "2025-11-20T14:15:00.000Z"},
+      "confirmed_at": {"$date": "2025-11-20T14:16:00.000Z"},
+      "shipped_at": {"$date": "2025-11-21T09:30:00.000Z"}
+    },
+    "shipping": {
+      "carrier": "UPS",
+      "tracking_number": "1Z999BB7890123456",
+      "service_type": "Ground",
+      "estimated_delivery": {"$date": "2025-11-24T17:00:00.000Z"}
+    },
+    "created_at": {"$date": "2025-11-20T14:15:00.000Z"},
+    "updated_at": {"$date": "2025-11-21T09:30:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789e01"},
+    "order_number": "ORD-2025-11-001236", 
+    "customer_id": {"$oid": "674685a1b2c3d4e5f6789abe"},
+    "customer_email": "emma.wilson@company.org",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789025"},
+        "sku": "FURN-CHAIR-001",
+        "name": "Ergonomic Office Chair",
+        "quantity": 1,
+        "unit_price": 349.99,
+        "subtotal": 349.99
+      }
+    ],
+    "totals": {
+      "subtotal": 349.99,
+      "tax": 45.50,
+      "shipping": 25.00,
+      "discount": 35.00,
+      "grand_total": 385.49
+    },
+    "shipping_address": {
+      "street": "555 University Avenue, Floor 12",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5G 1X8",
+      "country": "Canada"
+    },
+    "billing_address": {
+      "street": "555 University Avenue, Floor 12",
+      "city": "Toronto", 
+      "province": "ON",
+      "postal_code": "M5G 1X8",
+      "country": "Canada"
+    },
+    "payment": {
+      "method": "credit_card",
+      "status": "pending",
+      "transaction_id": null,
+      "last_four": "8765",
+      "card_brand": "mastercard"
+    },
+    "notes": "Office furniture for new employee setup.",
+    "timeline": {
+      "ordered_at": {"$date": "2025-11-25T16:45:00.000Z"}
+    },
+    "shipping": {
+      "carrier": "FedEx",
+      "tracking_number": null,
+      "service_type": "Standard",
+      "estimated_delivery": {"$date": "2025-11-30T17:00:00.000Z"}
+    },
+    "created_at": {"$date": "2025-11-25T16:45:00.000Z"},
+    "updated_at": {"$date": "2025-11-25T16:45:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789e02"},
+    "order_number": "ORD-2025-11-001237",
+    "customer_id": {"$oid": "674685a1b2c3d4e5f6789abf"},
+    "customer_email": "david.martinez@tech.co",
+    "status": "completed",
+    "items": [
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789012"},
+        "sku": "ELEC-LAPTOP-001",
+        "name": "High-Performance Laptop",
+        "quantity": 2,
+        "unit_price": 1299.99,
+        "subtotal": 2599.98
+      },
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789014"},
+        "sku": "ELEC-KEYB-008",
+        "name": "Mechanical Keyboard",
+        "quantity": 2,
+        "unit_price": 149.99,
+        "subtotal": 299.98
+      }
+    ],
+    "totals": {
+      "subtotal": 2899.96,
+      "tax": 377.00,
+      "shipping": 0.00,
+      "discount": 150.00,
+      "grand_total": 3126.96
+    },
+    "shipping_address": {
+      "street": "200 King Street West, Suite 3000",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5H 3T4",
+      "country": "Canada"
+    },
+    "billing_address": {
+      "street": "200 King Street West, Suite 3000",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5H 3T4",
+      "country": "Canada"
+    },
+    "payment": {
+      "method": "company_account",
+      "status": "completed",
+      "transaction_id": "corp_2025110012347",
+      "purchase_order": "PO-2025-1145"
+    },
+    "notes": "Bulk order for new development team. Rush delivery requested.",
+    "timeline": {
+      "ordered_at": {"$date": "2025-11-10T09:00:00.000Z"},
+      "confirmed_at": {"$date": "2025-11-10T09:05:00.000Z"},
+      "shipped_at": {"$date": "2025-11-11T10:30:00.000Z"},
+      "delivered_at": {"$date": "2025-11-12T15:20:00.000Z"}
+    },
+    "shipping": {
+      "carrier": "Purolator",
+      "tracking_number": "1Z999CC1122334455",
+      "service_type": "Next Day",
+      "estimated_delivery": {"$date": "2025-11-12T17:00:00.000Z"}
+    },
+    "created_at": {"$date": "2025-11-10T09:00:00.000Z"},
+    "updated_at": {"$date": "2025-11-12T15:20:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "674685a1b2c3d4e5f6789e03"},
+    "order_number": "ORD-2025-10-000998",
+    "customer_id": {"$oid": "674685a1b2c3d4e5f6789ab0"},
+    "customer_email": "lisa.thompson@university.edu",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789020"},
+        "sku": "BOOK-FICTION-101",
+        "name": "The Mystery Novel",
+        "quantity": 1,
+        "unit_price": 24.99,
+        "subtotal": 24.99
+      },
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789030"},
+        "sku": "BOOK-TEXTBOOK-001",
+        "name": "Advanced Mathematics",
+        "quantity": 1,
+        "unit_price": 89.99,
+        "subtotal": 89.99
+      },
+      {
+        "product_id": {"$oid": "674685a1b2c3d4e5f6789031"},
+        "sku": "SUPPLY-PEN-001",
+        "name": "Premium Pen Set",
+        "quantity": 1,
+        "unit_price": 15.99,
+        "subtotal": 15.99
+      }
+    ],
+    "totals": {
+      "subtotal": 130.97,
+      "tax": 17.03,
+      "shipping": 8.99,
+      "discount": 5.00,
+      "grand_total": 151.99
+    },
+    "shipping_address": {
+      "street": "100 College Street, Residence Hall A, Room 324",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5S 3M2",
+      "country": "Canada"
+    },
+    "billing_address": {
+      "street": "100 College Street, Residence Hall A, Room 324",
+      "city": "Toronto",
+      "province": "ON",
+      "postal_code": "M5S 3M2",
+      "country": "Canada"
+    },
+    "payment": {
+      "method": "debit_card",
+      "status": "completed",
+      "transaction_id": "debit_2025100012348",
+      "last_four": "9876",
+      "card_brand": "interac"
+    },
+    "notes": "Student order - textbooks for fall semester.",
+    "timeline": {
+      "ordered_at": {"$date": "2025-10-28T20:15:00.000Z"},
+      "confirmed_at": {"$date": "2025-10-28T20:16:00.000Z"},
+      "shipped_at": {"$date": "2025-10-30T08:45:00.000Z"},
+      "delivered_at": {"$date": "2025-11-02T14:30:00.000Z"}
+    },
+    "shipping": {
+      "carrier": "Canada Post",
+      "tracking_number": "1Z999DD5566778899",
+      "service_type": "Regular",
+      "estimated_delivery": {"$date": "2025-11-02T17:00:00.000Z"}
+    },
+    "created_at": {"$date": "2025-10-28T20:15:00.000Z"},
+    "updated_at": {"$date": "2025-11-02T14:30:00.000Z"}
+  }
+]

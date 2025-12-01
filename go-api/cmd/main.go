@@ -6,6 +6,7 @@ import (
 	"github.com/joho/godotenv"
 
 	"julianmorley.ca/con-plar/prog2270/internal/router"
+	"julianmorley.ca/con-plar/prog2270/pkg/ai"
 	"julianmorley.ca/con-plar/prog2270/pkg/global"
 	"julianmorley.ca/con-plar/prog2270/pkg/mongo"
 )
@@ -18,6 +19,7 @@ func main() {
 
 	mongo.InitMongoDB()
 	mongo.EnsureIndexesOnStartup()
+	ai.InitializeAIService()
 	router.InitEngine()
 	router.InitializeRoutes()
 
